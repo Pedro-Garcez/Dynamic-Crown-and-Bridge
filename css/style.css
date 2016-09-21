@@ -1,0 +1,22 @@
+@import 'main.css';
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+html {
+	background: #FDFDFD;
+	-ms-overflow-y: scroll;
+	    overflow-y: scroll;
+}
+
+body {
+	background: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lobster', cursive;
+	
+}
+
+p {
+	font-family: 'Cabin', sans-serif;
+}

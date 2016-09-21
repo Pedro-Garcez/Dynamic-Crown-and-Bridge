@@ -1,0 +1,82 @@
+some kind of nice blue yummy background nice and dental boi too. simple some how aesthetically pleasing texture or paint stamps. then in nice white shade of color put dynamic crown and brdige real big in the appropriate fonts. nice lil arrow goin down with jquery animation (noice). use teeth particles, have soem kiund of particles
+
+need at least one REAL ncie and RELEVANT hero stock image.
+
+imageshould be relevant to who willie is targeting.
+
+hero image / slider section: intro, sneak peek at work,
+
+feature section: courier competetive prices  
+
+recent work section
+
+
+
+UX
+
+when you have user stories you can generate content by addressing the users needs.
+
+ hierarchy left to right:
+
+home features(lowered prices, courier, 25 years experience) work testimonials  about willie contact  
+
+BRAND ATTRIBUTES: 
+
+medical, friendly, bright, professional, happy
+blunt
+  
+WHAT WORDS BEST DESCRIBE THE BRAND CULTURE?
+
+
+
+WHAT WORDS BEST DESCRIBE THE BRAND CUSTOMER?
+
+WHAT WORDS BEST DESCRIBE THE BRAND VOICE?
+
+WHAT WORDS BEST DESCRIBE THE BRAND BENEFITS?
+
+WHAT WORDS BEST DESCRIBE THE BRAND VALUE?
+
+USER PROFILES:
+
+
+Useful Profile: Persona A is an experienced manager, mostly interested in one or two areas of expertise. They visit often, but they are pressed for time, so they focus on “collecting” content to read on the weekends. They tend to be prolific social media sharers, mostly to Twitter and LinkedIn. They consider themselves thought-leaders, so public image is important.
+
+ tom: upset with current lab. looking around for new lab. older man. wants see examples of work. looking for good prices.
+
+terry: tech savvy out of college. looking for good labs. wants to see work. wants courier, competetive prices, experienced lab.
+
+GOALS
+
+willie wants new customers above all else, the site should reflect that. everythign should be geared toward trying toget new customers. so make him look good and give them reasons to switch to willie. beatuiful easy to navigate straight to the point site with examples of work, highlighting willies reduced prices and courier, 25 years of experience, call to action to contact
+
+SITE AUDIT
+
+look over competetion? look over current site?
+
+
+
+REVIEW USER NEEDS
+
+
+CREATE USER STORIES
+
+create user stories from user profiles.
+
+take the user profiles and see how u can address how to 
+
+find about/ how does user find out?
+ 
+engage them   what makes him engage?
+
+have them come back/ what makes him come back?
+
+refer / why does he recommend?
+
+--------------------> feature prioritization, content strategy
+
+SITE MAP
+
+
+WIRE FRAMES
+
