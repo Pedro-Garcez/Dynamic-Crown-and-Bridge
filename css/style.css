@@ -44,7 +44,18 @@ p, a {
 	font-weight: 500;
 }
 
+.navbar-default{
+	    box-shadow: 0 1px 0 rgba(6, 6, 6, 0.58);
+	    border: none;
+}
+
 .jumbotron {
+	
+	
+	
+}
+
+.first-slide {
 	background: url(../img/SmilingWoman.jpg);
 	height: 100vh;
 	background-position: center center;
@@ -53,7 +64,12 @@ p, a {
     -o-background-size: cover;
      background-size: cover;
 	color: #fdfdfd;
-	
+}
+
+.second-slide {
+	background: black;
+	height: 100vh;
+	color: #fdfdfd;
 }
 
 .vcenter {
@@ -64,7 +80,5 @@ p, a {
     transform: translateY(-50%);
 }
 
-.navbar-default{
-	    box-shadow: 0 1px 0 rgba(6, 6, 6, 0.58);
-	    border: none;
-}
+
+
