@@ -1,6 +1,6 @@
 @import 'main.css';
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,500);
 
 html {
 	background: #FDFDFD;
@@ -17,6 +17,54 @@ h1, h2, h3, h4, h5 {
 	
 }
 
-p {
+p, a {
 	font-family: 'Cabin', sans-serif;
+}
+
+.logo {
+	width: 50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+}
+
+.nav-custom-dynamic {
+	background: rgba(0,0,0,0.2);
+	padding-left: 30px;
+	padding-right: 30px;
+	color: #FDFDFD;
+	
+}
+
+.navbar-default .navbar-nav>li>a {
+	line-height: 35px;
+	font-size: 120%;
+	color: #FDFDFD;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.jumbotron {
+	background: url(../img/SmilingWoman.jpg);
+	height: 100vh;
+	background-position: center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+	color: #fdfdfd;
+	
+}
+
+.vcenter {
+	position: relative;
+    top: calc(50% - 25px);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.navbar-default{
+	    box-shadow: 0 1px 0 rgba(6, 6, 6, 0.58);
+	    border: none;
 }
