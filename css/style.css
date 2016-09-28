@@ -54,6 +54,8 @@ p, a {
 letter-spacing: 3px;
 	font-size: 5em;
 	margin: .73em;
+	text-shadow: 0 -1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.8);
+	
 	  
 }
 
@@ -62,6 +64,9 @@ letter-spacing: 3px;
 	font-size: 3.3em;
 	margin: .73em;
 	letter-spacing: 3px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 -1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.8);
+	
 }
 
 
@@ -70,9 +75,24 @@ letter-spacing: 3px;
 	font-size: 2.8em;
 	margin: .73em;
 	letter-spacing: 3px;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 -1px 0 rgba(255,255,255,.5), 0 1px 0 rgba(0,0,0,.8);
+	
 }
 
+.overlay {
+	position: absolute;
+	background-color:  rgba(27, 44, 131, .6);
+	height: 100%;
+	width: 100%;
+	z-index: -5;
+	top: 0;
+	bottom: 0;
+}
 
+/*.slides {
+	margin-bottom: -60px!important;
+}*/
 
 @media (max-width: 768px) {
   .jumbotron h1  {
@@ -104,14 +124,16 @@ letter-spacing: 3px;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
+    background-size: cover;
 	color: #fdfdfd;
+	z-index -10;
 }
 
 .second-slide {
-	background: black;
+	background: white;
 	height: 100vh;
 	color: #fdfdfd;
+	z-index -10;
 }
 
 .fade-custom {
