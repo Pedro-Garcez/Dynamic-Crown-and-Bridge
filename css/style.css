@@ -49,6 +49,14 @@ p, a {
 	    border: none;
 }
 
+
+.jumbotron h1 {
+letter-spacing: 3px;
+	font-size: 5em;
+	margin: .73em;
+	  
+}
+
 .jumbotron h2 {
 	font-family: 'Cabin';
 	font-size: 3.3em;
@@ -64,10 +72,30 @@ p, a {
 	letter-spacing: 3px;
 }
 
-.jumbotron h1 {
-letter-spacing: 3px;
-	font-size: 5em;
-	margin: .73em;
+
+
+@media (max-width: 768px) {
+  .jumbotron h1  {
+    font-size: 3em;
+  }
+  .jumbotron h2  {
+    font-size: 1.3em;
+  }
+  .jumbotron h3  {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+  .jumbotron h1  {
+    font-size: 4em;
+  }
+  .jumbotron h2  {
+    font-size: 2.3em;
+  }
+  .jumbotron h3  {
+    font-size: 1.8em;
+  }
 }
 .first-slide {
 	background: url(../img/SmilingWoman.jpg);
