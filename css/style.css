@@ -45,16 +45,30 @@ p, a {
 }
 
 .navbar-default{
-	    box-shadow: 0 1px 0 rgba(6, 6, 6, 0.58);
+	    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.22);
 	    border: none;
 }
 
-.jumbotron {
-	
-	
-	
+.jumbotron h2 {
+	font-family: 'Cabin';
+	font-size: 3.3em;
+	margin: .73em;
+	letter-spacing: 3px;
 }
 
+
+.jumbotron h3 {
+	font-family: 'Cabin';
+	font-size: 2.8em;
+	margin: .73em;
+	letter-spacing: 3px;
+}
+
+.jumbotron h1 {
+letter-spacing: 3px;
+	font-size: 5em;
+	margin: .73em;
+}
 .first-slide {
 	background: url(../img/SmilingWoman.jpg);
 	height: 100vh;
@@ -71,6 +85,41 @@ p, a {
 	height: 100vh;
 	color: #fdfdfd;
 }
+
+.fade-custom {
+	
+}
+
+
+/*.slick-prev:after {
+  font-family: FontAwesome;
+   content: "\f053";
+  color: #FDFDFD;
+  font-size: 50px;
+  
+}
+
+.slick-next:before {
+  font-family: FontAwesome;
+   content: "\f054";
+  color: #FDFDFD;
+  font-size: 50px;
+  
+}
+
+.slick-prev {
+  z-index: 1;
+  left: 40px;
+  
+}
+
+.slick-next {
+  z-index: 1;
+  right: 40px;
+  
+}
+*/
+
 
 .vcenter {
 	position: relative;

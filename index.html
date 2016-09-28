@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://use.fontawesome.com/3ca74ba5c3.js"></script>
     </head>
     <body id="page-top" class="index">
         <!--[if lt IE 8]>
@@ -75,20 +76,25 @@
             </div>
         </div>-->
         <div class="slides">
-            <div class="jumbotron jumbotron-fluid first-slide">
+            <div class="jumbotron jumbotron-fluid second-slide">
                 <div class="vcenter slide ">
-                    <h1 class="display-3 text-center">Dynamic Crown & Bridge</h1>
-                    <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
+                    <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
+                    <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
+                    <h2 class="display-3 text-center fade-custom">DENTAL PROSTHETICS</h2>
                 </div>
             </div>
-            <div class="jumbotron jumbotron-fluid first-slide">
+            <div class="jumbotron jumbotron-fluid second-slide">
                 <div class="vcenter slide ">
                     <h1 class="display-3 text-center">Dynamic Crown & Bridge</h1>
                     <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
                 </div>
             </div>
         </div>
-        
+         <br><br> 
+         <br><br> 
+         <br><br> 
+         <br><br> 
+         <br><br> 
         
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -101,10 +107,13 @@
         $(".slides").slick({
         useTransform: true,
         autoplay:true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 5000,
         arrows:false,
+        fade: true,
         slidesToShow:1,
         slidesToScroll:1,
+        pauseOnHover:false,
+        pauseOnFocus:false,
         dots:false,
         cssEase: 'ease-out',
         speed: 1500,
@@ -115,6 +124,10 @@
         dots: false
         }
         }]
+        });
+        </script>
+        <script>$(window).scroll(function(){
+        $(".fade-custom").css("opacity", 1 - $(window).scrollTop() / 250);
         });
         </script>
         
