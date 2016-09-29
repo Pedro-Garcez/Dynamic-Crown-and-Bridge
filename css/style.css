@@ -78,7 +78,7 @@ p, a {
 
 .jumbotron h2 {
 	font-family: 'Cabin';
-	font-size: 3.3em;
+	font-size: 3.1em;
 	margin-top: 0;
 	margin-bottom: 55px;
 	letter-spacing: 3px;
@@ -90,7 +90,7 @@ p, a {
 
 .jumbotron h3 {
 	font-family: 'Cabin';
-	font-size: 2.8em;
+	font-size: 2.6em;
 	margin-bottom: 55px;
 	margin-top: 0;
 	letter-spacing: 3px;
@@ -105,17 +105,58 @@ p, a {
 
 .overlay {
 	position: absolute;
-	background: rgb(27,69,199); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(27,69,199,.9) 1%, rgba(125,185,232,.7) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b45c7', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: linear-gradient(253deg, rgba(27,69,199,.8), rgba(125,185,232,.9), rgba(27,69,199,.8));
+    background-size: 300% 300%;
+    -webkit-animation: Background 20s ease infinite;
+    -moz-animation: Background 20s ease infinite;
+    animation: Background 20s ease infinite;
+	/*background: rgb(27,69,199);
+    background: -moz-linear-gradient(left, rgba(27,69,199,.9) 1%, rgba(125,185,232,.7) 100%); 
+    background: -webkit-linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); 
+    background: linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b45c7', endColorstr='#7db9e8',GradientType=1 );*/
 	height: 100%;
 	width: 100%;
 	z-index: 0;
 	top: 0;
 	bottom: 0;
 }
+
+  @-webkit-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @-moz-keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
+  @keyframes Background {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
 
 @media (max-width: 768px) {
   .jumbotron h1  {
@@ -151,7 +192,7 @@ p, a {
 }
 .first-slide {
 	background: url(../img/SmilingWoman.jpg);
-	height: 100vh;
+	height: calc(100vh);
 	background-position: center center;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
