@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link href="css/hover-min.css" rel="stylesheet" media="all">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://use.fontawesome.com/3ca74ba5c3.js"></script>
@@ -38,19 +39,22 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#services">Services</a>
+                            <a class="page-scroll hvr-pop" href="#services">WELCOME</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                            <a class="page-scroll hvr-pop" href="#portfolio">AT A GLANCE</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#about">About</a>
+                            <a class="page-scroll hvr-pop" href="#about">RECENT WORK</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#team">Team</a>
+                            <a class="page-scroll hvr-pop" href="#team">ABOUT</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
+                            <a class="page-scroll hvr-pop" href="#contact">TESTIMONIALS</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll hvr-pop" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -58,27 +62,10 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <!--<div class="jumbotron jumbotron-fluid ">
-            <div class="container vcenter">
-                <h1 class="display-3 text-center">Dynamic Crown & Bridge</h1>
-                <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
-            </div>
-        </div>">-->
         <!--<div class="slides">
-            <div class="slide">
-                <p>Test will it work? I doubt it</p>
-            </div>
-            <div class="slide">
-                <p>Lol yeah sure</p>
-            </div>
-            <div class="slide">
-                <p>No way itll work</p>
-            </div>
-        </div>-->
-        <div class="slides">
             
             <div class="jumbotron jumbotron-fluid first-slide">
-            <div class="overlay"></div>
+                <div class="overlay"></div>
                 <div class="vcenter slide ">
                     
                     <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
@@ -92,12 +79,31 @@
                     <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
                 </div>
             </div>
+        </div>-->
+        
+        
+        <div class="jumbotron jumbotron-fluid first-slide">
+            <div class="overlay"></div>
+            <div class="vcenter">
+                
+                <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
+                <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
+                <div class="slides">
+                    <h2 class="display-3 text-center fade-custom slide">DENTAL LABORATORY</h2>
+                    <h2 class="display-3 text-center fade-custom slide">NATURAL AESTHETICS</h2>
+                    <h2 class="display-3 text-center fade-custom slide">25 YEARS OF EXPERIENCE</h2>
+                    
+
+                </div>
+            </div>
         </div>
-         <br><br> 
-         <br><br> 
-         <br><br> 
-         <br><br> 
-         <br><br> 
+        
+        
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
         
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -112,12 +118,14 @@
         autoplay:true,
         autoplaySpeed: 5000,
         arrows:false,
-        fade: true,
+        fade: false,
         slidesToShow:1,
         slidesToScroll:1,
         pauseOnHover:false,
         pauseOnFocus:false,
         dots:false,
+        draggable: false,
+        vertical: true,
         cssEase: 'ease-out',
         speed: 1500,
         responsive: [
