@@ -40,7 +40,7 @@
                         </li>
                         <li>
                             <a class="page-scroll" href="#services">WELCOME</a>
-                           <!-- <span></span>-->
+                            <!-- <span></span>-->
                         </li>
                         <li>
                             <a class="page-scroll" href="#portfolio">AT A GLANCE</a>
@@ -68,24 +68,7 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
-        <!--<div class="slides">
-            
-            <div class="jumbotron jumbotron-fluid first-slide">
-                <div class="overlay"></div>
-                <div class="vcenter slide ">
-                    
-                    <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
-                    <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
-                    <h2 class="display-3 text-center fade-custom">DENTAL PROSTHETICS</h2>
-                </div>
-            </div>
-            <div class="jumbotron jumbotron-fluid second-slide">
-                <div class="vcenter slide ">
-                    <h1 class="display-3 text-center">Dynamic Crown & Bridge</h1>
-                    <p class="lead text-center">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
-                </div>
-            </div>
-        </div>-->
+        
         
         
         <div class="jumbotron jumbotron-fluid first-slide">
@@ -102,28 +85,18 @@
                 </div>
             </div>
         </div>
-        <svg class="arrows">
-        <path class="a1" d="M0 0 L30 32 L60 0"></path>
-    <path class="a2" d="M0 20 L30 52 L60 20"></path>
-<path class="a3" d="M0 40 L30 72 L60 40"></path>
-</svg>
-<!--<a href="#">
-<div id="mouse-scroll">
-    <div class="mouse">
-        <div class="mouse-in"></div>
-    </div>
-    <div>
-        <span class="down-arrow-1"></span>
-        <span class="down-arrow-2"></span>
-        <span class="down-arrow-3"></span>
-    </div>
-</div>
-</a>-->
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+        <svg class="arrows fade-custom">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+        <div id="at-a-glance" class="container-fluid">
+            <div class="row"></div>
+        </div>
+
+
+
+
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
@@ -131,33 +104,47 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script>
-$(".slides").slick({
-useTransform: true,
-autoplay:true,
-autoplaySpeed: 5000,
-arrows:false,
-fade: false,
-slidesToShow:1,
-slidesToScroll:1,
-pauseOnHover:false,
-pauseOnFocus:false,
-dots:false,
-draggable: false,
-vertical: true,
-cssEase: 'ease-out',
-speed: 1500,
-responsive: [
-{
-breakpoint: 1024,
-settings: {
-dots: false
+    window.onbeforeunload = function () {
+  window.scrollTo(0,0);
 }
-}]
-});
 </script>
-<script>$(window).scroll(function(){
-$(".fade-custom").css("opacity", 1 - $(window).scrollTop() / 250);
-});
+<script>
+    $(".slides").slick({
+    useTransform: true,
+    autoplay:true,
+    autoplaySpeed: 5000,
+    arrows:false,
+    fade: false,
+    slidesToShow:1,
+    slidesToScroll:1,
+    pauseOnHover:false,
+    pauseOnFocus:false,
+    dots:false,
+    draggable: false,
+    vertical: true,
+    cssEase: 'ease-out',
+    speed: 750,
+    responsive: [
+    {
+    breakpoint: 1024,
+    settings: {
+    dots: false
+    }
+    }]
+    });
+</script>
+<script>
+    $(".arrows").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#at-a-glance").offset().top
+        }, 1000);
+        });
+</script>
+
+<script>
+    $(window).scroll(function(){
+        $(".fade-custom").css("opacity", 1 - $(window).scrollTop() / 400);
+        });
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
