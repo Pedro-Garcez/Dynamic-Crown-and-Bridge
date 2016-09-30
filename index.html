@@ -71,25 +71,32 @@
         
         
         
-        <div class="jumbotron jumbotron-fluid first-slide">
-            <div class="overlay"></div>
-            <div class="vcenter">
+        <div class="jumbotron first-slide">
+            
+                <div class="overlay"></div>
+                <div class="vcenter">
                 
-                <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
-                <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
-                <div class="slides">
-                    <h2 class="display-3 text-center fade-custom slide">DENTAL LABORATORY</h2>
-                    <h2 class="display-3 text-center fade-custom slide">NATURAL AESTHETICS</h2>
-                    <h2 class="display-3 text-center fade-custom slide">25 YEARS OF EXPERIENCE</h2>
+                    <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
+                    <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
+                    <div class="slides">
+                        <h2 class="display-3 text-center fade-custom slide">DENTAL LABORATORY</h2>
+                        <h2 class="display-3 text-center fade-custom slide">NATURAL AESTHETICS</h2>
+                        <h2 class="display-3 text-center fade-custom slide">25 YEARS OF EXPERIENCE</h2>
                     
                 </div>
-            </div>
-        </div>
-        <svg class="arrows fade-custom">
+                   
+
+             </div>
+        <p class="scroll-to-discover blink-text scroll-hero">SCROLL DOWN</p> 
+        <svg class="arrows fade-custom scroll-hero">
+            
             <path class="a1" d="M0 0 L30 32 L60 0"></path>
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
         </svg>
+        </div>
+        
+        
         <div id="at-a-glance" class="container-fluid">
             <div class="row"></div>
         </div>
@@ -134,7 +141,7 @@
     });
 </script>
 <script>
-    $(".arrows").click(function() {
+    $(".scroll-hero").click(function() {
         $('html, body').animate({
         scrollTop: $("#at-a-glance").offset().top
         }, 1000);

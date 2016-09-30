@@ -140,7 +140,7 @@ p, a {
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
 	font-family: 'Cabin';
-	font-size: 3.1em;
+	font-size: 2.9em;
 	margin-top: 0;
 	margin-bottom: 55px;
 	letter-spacing: 3px;
@@ -158,7 +158,7 @@ p, a {
          -o-animation: fadein 5s; /* Opera < 12.1 */
             animation: fadein 5s;
 	font-family: 'Cabin';
-	font-size: 2.6em;
+	font-size: 2.4em;
 	margin-bottom: 55px;
 	margin-top: 0;
 	letter-spacing: 3px;
@@ -166,6 +166,86 @@ p, a {
 	text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.5px 0 rgba(10,27,79,1);
 	 
 	
+}
+
+.jumbotron p {
+	font-size: 1.5em;
+    margin-bottom: 0;
+    
+}
+
+@media (max-width: 768px) {
+  .jumbotron h1  {
+    font-size: 3.2em;
+    margin-bottom: 30px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 2px 0 rgba(10,27,79,1);
+  }
+  .jumbotron h2  {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.15px 0 rgba(10,27,79,1);
+  }
+  .jumbotron h3  {
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.15px 0 rgba(10,27,79,1);
+    
+  }
+  .jumbotron p {
+	display: none;
+    
+    
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+  .jumbotron h1  {
+    font-size: 4em;
+    margin-bottom: 40px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 2px 0 rgba(10,27,79,1);
+    
+    
+  }
+  .jumbotron h2  {
+    font-size: 2.3em;
+    margin-bottom: 40px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.15px 0 rgba(10,27,79,1);
+    
+    
+  }
+  .jumbotron h3  {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.15px 0 rgba(10,27,79,1);
+    
+    
+  }
+}
+
+.scroll-to-discover {
+	position: absolute;
+	-webkit-transform: translate(-50%);
+	   -moz-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	     -o-transform: translate(-50%);
+	        transform: translate(-50%);
+	bottom: 90px;
+    left:50%;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+.blink-text {
+	animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
 }
 
 @keyframes fadein {
@@ -203,7 +283,7 @@ p, a {
 
 .overlay {
 	position: absolute;
-	background: linear-gradient(253deg, rgba(27,69,199,.8), rgba(125,185,232,.9), rgba(27,69,199,.8));
+	background: linear-gradient(253deg, rgba(49,87,204,.8), rgba(125,185,232,.9));
     background-size: 300% 300%;
     -webkit-animation: Background 15s ease infinite;
     -moz-animation: Background 15s ease infinite;
@@ -256,38 +336,7 @@ p, a {
     }
   }
 
-@media (max-width: 768px) {
-  .jumbotron h1  {
-    font-size: 3.2em;
-    margin-bottom: 30px;
-  }
-  .jumbotron h2  {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-  .jumbotron h3  {
-    font-size: 1em;
-    margin-bottom: 30px;
-  }
-}
 
-@media screen and (min-width: 768px) and (max-width: 992px)  {
-  .jumbotron h1  {
-    font-size: 4em;
-    margin-bottom: 40px;
-    
-  }
-  .jumbotron h2  {
-    font-size: 2.3em;
-    margin-bottom: 40px;
-    
-  }
-  .jumbotron h3  {
-    font-size: 1.8em;
-    margin-bottom: 40px;
-    
-  }
-}
 .first-slide {
 	background: url(../img/SmilingWoman.jpg);
 	height: calc(100vh);
@@ -319,13 +368,14 @@ p, a {
     transform: translateY(-50%);
 }
 
+
 .arrows {
 	width: 70px;
 	height: 80px;
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: 20px;
+	bottom: 5px;
 	cursor: pointer;
 	
 	
@@ -335,11 +385,18 @@ p, a {
 .arrows path {
 	stroke: #f9f9f9;
 	fill: transparent;
-	stroke-width: 4px;	
+	stroke-width: 3px;	
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite;
 	
 	 
+}
+
+@media (max-width: 768px) {
+	.arrows path {
+	stroke-width: 2px;
+	}
+
 }
 
 @keyframes arrow
