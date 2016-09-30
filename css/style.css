@@ -2,6 +2,55 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,500,600);
 
+
+/*span {
+  display:none;
+  width:calc(100% - 23px);
+  height:2.5px;
+  background:#FDFDFD;
+  position:absolute;
+  left:10px;
+  bottom:18px;
+}
+.navbar-default .navbar-nav>li a:hover {
+ 	color:#FDFDFD;
+ 	
+}
+
+.navbar-default .navbar-nav>li a:hover ~ span {
+ 	 animation:ul 0.3s ease-out;
+ 	 display:block;
+}
+
+@keyframes ul {
+ 	0% { 
+    width:0;
+  }
+  100% { 
+    width:calc(100% - 23px);
+  }
+}*/
+
+.navbar-default .navbar-nav>li>a {
+  text-decoration: none;
+  position: relative;
+  color: #FDFDFD
+}
+
+.navbar-default .navbar-nav>li>a:after {
+  content: '';
+  position: absolute;
+  bottom: 19px;
+  left: 0px;
+  width: 0%;
+  border-bottom: 2px solid #FDFDFD;
+  transition: 0.4s;
+}
+
+.navbar-default .navbar-nav>li>a:hover:after {
+  width: 100%;
+}
+
 html {
 	background: #FDFDFD;
 	-ms-overflow-y: scroll;
@@ -41,10 +90,12 @@ p, a {
 	line-height: 35px;
 	font-size: 1.1em;
 	color: #FDFDFD;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
 	/*letter-spacing: 1px;*/
 	font-weight: 600;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
@@ -71,7 +122,7 @@ p, a {
 	font-size: 5em;
 	margin-bottom: 65px;
 	margin-top: 0;
-	text-shadow: 0 -1.5px 0 rgba(255,255,255,.5), 0 1.5px 0 rgba(0,0,0,.8);
+	text-shadow: /*0 -1.5px 0 rgba(255,255,255,.5),*/ 0 3px 0 rgba(16,41,119,.8);
 	
 	  
 }
@@ -82,8 +133,8 @@ p, a {
 	margin-top: 0;
 	margin-bottom: 55px;
 	letter-spacing: 3px;
-	color: rgba(255, 255, 255, 0.85);
-	text-shadow: 0 -1.25px 0 rgba(255,255,255,.5), 0 1.25px 0 rgba(0,0,0,.8);
+	color: rgba(255, 255, 255, 1);
+	text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.5px 0 rgba(16,41,119,.8);
 	
 }
 
@@ -94,8 +145,8 @@ p, a {
 	margin-bottom: 55px;
 	margin-top: 0;
 	letter-spacing: 3px;
-	color: rgba(255, 255, 255, 0.85);
-	text-shadow: 0 -1.25px 0 rgba(255,255,255,.5), 0 1.25px 0 rgba(0,0,0,.8);
+	color: rgba(255, 255, 255, 1);
+	text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/ 0 1.5px 0 rgba(16,41,119,.8);
 	
 }
 
@@ -106,7 +157,7 @@ p, a {
 .overlay {
 	position: absolute;
 	background: linear-gradient(253deg, rgba(27,69,199,.8), rgba(125,185,232,.9), rgba(27,69,199,.8));
-    background-size: 300% 300%;
+    background-size: 150% 150%;
     -webkit-animation: Background 20s ease infinite;
     -moz-animation: Background 20s ease infinite;
     animation: Background 20s ease infinite;
@@ -202,16 +253,79 @@ p, a {
 	z-index -10;
 }
 
-.second-slide {
+/*.second-slide {
 	background: white;
 	height: 100vh;
 	color: #fdfdfd;
 	z-index -10;
-}
+}*/
 
 .fade-custom {
 	
 }
+
+.vcenter {
+	position: relative;
+    top: calc(50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.arrows {
+	width: 70px;
+	height: 80px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+	
+	
+	
+}
+
+.arrows path {
+	stroke: #FDFDFD;
+	fill: transparent;
+	stroke-width: 4px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+	
+	 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+	   
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
 
 
 /*.slick-prev:after {
@@ -244,13 +358,111 @@ p, a {
 */
 
 
-.vcenter {
-	position: relative;
-    top: calc(50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+
+/*#mouse-scroll {
+  style: block;
+}
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll span{
+  display: block;
+  width: 10px; 
+  height: 10px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 4px solid #fff; 
+  border-bottom: 4px solid #fff;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+  height: 42px;
+  width: 28px;
+  border-radius: 20px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 4px solid #ffffff;
+  top: 340px;
+}
+#mouse-scroll .down-arrow-1 {
+  margin-top: 6px;
+}
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+  -webkit-animation: mouse-scroll 1s infinite; 
+    -moz-animation: mouse-scroll 1s infinite:
+}
+#mouse-croll .down-arrow-1 {
+   -webkit-animation-delay: .1s; 
+   -moz-animation-delay: .1s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-2 {
+  -webkit-animation-delay: .2s; 
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+   -webkit-animation-delay: .3s;
+   -moz-animation-dekay: .3s;
+   -webkit-animation-direction: alternate;
+}
+#mouse-scroll .mouse-in {
+  height: 6px;
+  width: 3px;
+  display: block; 
+  margin: 5px auto;
+  background: #ffffff;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  moz-animation: mouse-animated 1.2s ease infinite;
 }
 
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
 
 
