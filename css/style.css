@@ -1,6 +1,6 @@
 @import 'main.css';
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Cabin:400,500,600);
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 /*span {
   display:none;
@@ -29,6 +29,37 @@
     width:calc(100% - 23px);
   }
 }*/
+
+#brand {
+	font-family: 'Lobster';
+    padding-top: 0;
+    margin: 0;
+    top: -7px;
+    color: #f4f4f4;
+    position: absolute;
+    font-size: 3.75em;
+    width: 200px;
+}
+
+#brand span {
+	font-family: 'Lobster';
+}
+
+#brand:hover, #brand:active  {
+	text-decoration: none;
+}
+
+#brand p {
+	font-family: 'Lobster';
+    padding-top: 0;
+    margin: 0;
+    top: 55px;
+    right: 18px;
+    color: #f4f4f4;
+    position: absolute;
+    font-size: .35em;
+}
+
 
 .navbar-default .navbar-nav>li>a {
     text-decoration: none;
@@ -60,17 +91,22 @@ body {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1{
     font-family: 'Lobster', cursive;
 }
 
+h2,h3,h4,h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4.6em;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+
+
 p,
 a {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo {
@@ -94,7 +130,7 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     /*letter-spacing: 1px;*/
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 0;
     padding-right: 0;
 }
@@ -144,7 +180,7 @@ a {
     -o-animation: fadein 3s;
     /* Opera < 12.1 */
     animation: fadein 3s;
-    font-family: 'Cabin';
+    font-family: 'Roboto';
     font-size: 2.9em;
     margin-top: 0;
     margin-bottom: 55px;
@@ -152,6 +188,7 @@ a {
     color: rgba(255, 255, 255, 1);
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
     0 1.5px 0 rgba(10, 27, 79, 1);
+    font-weight: 500;
 }
 
 .jumbotron h3 {
@@ -164,7 +201,7 @@ a {
     -o-animation: fadein 5s;
     /* Opera < 12.1 */
     animation: fadein 5s;
-    font-family: 'Cabin';
+    font-family: 'Roboto';
     font-size: 2.4em;
     margin-bottom: 55px;
     margin-top: 0;
@@ -172,6 +209,7 @@ a {
     color: rgba(255, 255, 255, 1);
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
     0 1.5px 0 rgba(10, 27, 79, 1);
+    font-weight: 400;
 }
 
 .jumbotron p {
@@ -222,6 +260,39 @@ a {
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
     }
+}
+
+#mission-statement {
+	padding-left: 5%;
+	padding-right: 7%;
+	
+}
+
+#mission-statement p {
+	font-size: 1.7em;
+	color: rgba(103, 103, 103, 1);
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+#mission-statement h2 {
+	color: rgba(26, 129, 221, 1);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    h2 {
+    	font-size: 4em;
+    	line-height: 1.2;
+    }
+
+    #mission-statement p {
+    	font-size: 1.45em;
+		line-height: 1.4em;
+    }
+}
+
+.jumbotron {
+	margin: 0;
 }
 
 .scroll-to-discover {
@@ -309,11 +380,30 @@ a {
 
 .overlay {
     position: absolute;
-    background: linear-gradient(253deg, rgba(26, 129, 221, .9), rgba(85, 181, 243, .9));
+    background: linear-gradient(253deg, rgba(26, 129, 221, .8), rgba(85, 181, 243, .8));
     background-size: 300% 300%;
-    -webkit-animation: Background 10s ease infinite;
-    -moz-animation: Background 10s ease infinite;
-    animation: Background 10s ease infinite;
+    /*-webkit-animation: Background 6s ease infinite;*/
+    /*-moz-animation: Background 6s ease infinite;*/
+    /*animation: Background 6s ease infinite;*/
+    /*background: rgb(27,69,199);
+    background: -moz-linear-gradient(left, rgba(27,69,199,.9) 1%, rgba(125,185,232,.7) 100%); 
+    background: -webkit-linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); 
+    background: linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b45c7', endColorstr='#7db9e8',GradientType=1 );*/
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.overlay2 {
+    position: absolute;
+    background: linear-gradient(253deg, rgba(26, 129, 221, .15), rgba(85, 181, 243, .15));
+    background-size: 300% 300%;
+    /*-webkit-animation: Background 6s ease infinite;*/
+    /*-moz-animation: Background 6s ease infinite;*/
+    /*animation: Background 6s ease infinite;*/
     /*background: rgb(27,69,199);
     background: -moz-linear-gradient(left, rgba(27,69,199,.9) 1%, rgba(125,185,232,.7) 100%); 
     background: -webkit-linear-gradient(left, rgba(27,69,199,.9) 1%,rgba(125,185,232,.7) 100%); 
@@ -539,6 +629,24 @@ a {
 .courier {
 	font-size: 10em;
 }
+
+.glance-bg {
+	background: url(../img/test2.jpg);
+	 background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	 height: 100%;
+	 z-index: -5;
+	 padding: 0;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 
 
