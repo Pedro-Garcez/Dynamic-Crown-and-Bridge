@@ -14,8 +14,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link href="css/hover-min.css" rel="stylesheet" media="all">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="https://use.fontawesome.com/3ca74ba5c3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -70,35 +69,42 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div class="jumbotron" id="hero">
-        <div class="overlay" id=""></div>
-        <div class="hero-img-1"></div>
-        <div class="hero-img-2"></div>
-        <div class="vcenter">
-            <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
-            <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
-            <div class="slides">
-                <h2 class="display-3 text-center fade-custom slide">DENTAL LABORATORY</h2>
-                <h2 class="display-3 text-center fade-custom slide">NATURAL AESTHETICS</h2>
-                <h2 class="display-3 text-center fade-custom slide">25 YEARS OF EXPERIENCE</h2>
+    
+    <div class="main">
+
+        <section>
+            <div class="jumbotron" id="hero">
+                <div class="overlay" id=""></div>
+                <div class="hero-img-1"></div>
+                <div class="hero-img-2"></div>
+                <div class="vcenter">
+                    <h3 class="display-3 text-center fade-custom">WELCOME TO</h3>
+                    <h1 class="display-3 text-center fade-custom">Dynamic Crown & Bridge</h1>
+                    <div class="slides">
+                        <h2 class="display-3 text-center fade-custom slide">DENTAL LABORATORY</h2>
+                        <h2 class="display-3 text-center fade-custom slide">NATURAL AESTHETICS</h2>
+                        <h2 class="display-3 text-center fade-custom slide">25 YEARS OF EXPERIENCE</h2>
+                    </div>
+                </div>
+                <p class="scroll-to-discover blink-text scroll-hero fade-custom">SCROLL DOWN</p>
+                <svg class="arrows fade-custom scroll-hero">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
             </div>
-        </div>
-        <p class="scroll-to-discover blink-text scroll-hero fade-custom">SCROLL DOWN</p>
-        <svg class="arrows fade-custom scroll-hero">
-            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-        </svg>
-    </div>
-    <div id="at-a-glance" class="container-fluid">
-        <div class="vcenter col-md-5" id="mission-statement">
-            <h2>Our mission statement.</h2>
-            <p>At Dynamic Crown and Bridge, we strive to provide our doctors and their patients quality and service along with the best possible fit, function and aesthetics - from a single unit, to a roundhouse.</p>
-        
-        </div>
-        <div class="col-md-7 text-center glance-bg">
-            <div class="" id=""></div>
-        </div>
+        </section>
+        <section>
+            <div id="at-a-glance" class="container-fluid">
+                <div class="vcenter col-md-5 test" id="mission-statement">
+                    <h2>Our mission statement.</h2>
+                    <p>At Dynamic Crown and Bridge, we strive to provide our doctors and their patients quality and service along with the best possible fit, function and aesthetics - from a single unit, to a roundhouse.</p>
+                </div>
+                <div class="col-md-7 text-center glance-bg">
+                    <div class="" id=""></div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
@@ -108,10 +114,14 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/gradient.js"></script>
     <script type="text/javascript" src="js/FadeOnScroll.js"></script>
-    <script type="text/javascript" src="js/ScrollToSection.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/3ca74ba5c3.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll-settings.js"></script>
+    <script type="text/javascript" src="js/ScrollToSection.js"></script>
     <script>
     window.onbeforeunload = function() {
         window.scrollTo(0, 0);

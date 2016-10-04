@@ -83,8 +83,7 @@
 
 html {
     background: #f9f9f9;
-    -ms-overflow-y: scroll;
-    overflow-y: scroll;
+    
 }
 
 body {
@@ -272,7 +271,7 @@ a {
 	font-size: 1.7em;
 	color: rgba(103, 103, 103, 1);
 	font-weight: 300;
-	line-height: 1.5em;
+	line-height: 1.45em;
 }
 
 #mission-statement h2 {
