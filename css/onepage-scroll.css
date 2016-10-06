@@ -51,17 +51,18 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 10px;
+  height: 10px;
   background: rgba(253, 253, 253, 1);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.8),0 3px 10px 0 rgba(0,0,0,0.12);
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background: none;
   border: 1px solid #FDFDFD;
   margin-top: -4px;
