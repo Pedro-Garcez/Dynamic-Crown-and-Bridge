@@ -78,8 +78,6 @@ strong {
     font-size: .35em;
 }
 
-
-
 .navbar-default .navbar-nav>li>a:after {
     content: '';
     position: absolute;
@@ -117,48 +115,58 @@ h5 {
     line-height: 1.2em;
 }
 
-h4, h5 {
-	margin-top: .5em;
-	
-	font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+h4,
+h5 {
+    margin-top: .5em;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
     font-weight: 300;
     line-height: 1.2em;
     color: #fdfdfd;
 }
+
+p {
+    font-size: 1.7em;
+    font-weight: 300;
+    line-height: 1.45em;
+}
+
 
 /*#features .offset {
 	margin-left: 10%;
 }*/
 
 #features p {
-	margin-bottom: 2em;
-	padding-left: 10%;
-	padding-right: 10%;
+    margin-bottom: 2em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #features img {
-	width: 116.4px;
-	margin-top: 2em;
+    width: 116.4px;
+    margin-top: 2em;
 }
 
 #features h2 {
-	color: #fdfdfd;
-	font-weight: 400;
-	line-height: 1.2em;
+    color: #fdfdfd;
+    font-weight: 400;
 }
 
 #features .row {
-	padding-left: 10%;
-	padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-
-
 
 .logo {
     width: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+#contact .col-md-7 {
+    height: 100%;
+    padding: 0;
 }
 
 .nav-custom-dynamic {
@@ -188,7 +196,6 @@ h4, h5 {
 }
 
 
-
 /*.navbar-default .navbar-nav>li>a:active {
 	font-size: 1.25em;
 }*/
@@ -201,7 +208,7 @@ h4, h5 {
 }
 
 i.fa.fa-phone {
-	margin-right: 3px;
+    margin-right: 3px;
 }
 
 .jumbotron h1 {
@@ -270,27 +277,47 @@ i.fa.fa-phone {
     font-weight: 500;
 }
 
-@media (max-width: 768px) {
+
+/*Media Query*/
+
+.center-mobile {}
+
+@media (max-width: 767px) {
+    .jumbotron {}
     .jumbotron h1 {
-        font-size: 3.2em;
+        font-size: 3em;
         margin-bottom: 30px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 2px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
     }
     .jumbotron h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
         margin-bottom: 30px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
     }
     .jumbotron h3 {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-bottom: 30px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
     }
     .jumbotron p {
         display: none;
+    }
+    p {
+        font-size: 5.5vw;
+        line-height: 6.5vw;
+    }
+    h2 {
+        font-size: 14vw;
+        line-height: 14vw;
     }
 }
 
@@ -315,31 +342,42 @@ i.fa.fa-phone {
     }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    h2 {
+        font-size: 3.5em;
+        line-height: 1em;
+    }
+    p {
+        font-size: 1.3em;
+        line-height: 1.35em;
+    }
+    h4,
+    h5 {
+        font-size: 1.4em;
+    }
+    #features img {
+        width: 93.12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrows path {
+        stroke-width: 2px;
+    }
+}
+
 #mission-statement {
     padding-left: 5%;
     padding-right: 7%;
 }
 
 #mission-statement p {
-    font-size: 1.7em;
     color: rgba(103, 103, 103, 1);
     font-weight: 300;
-    line-height: 1.45em;
 }
 
 #mission-statement h2 {
     color: rgba(26, 129, 221, 1);
-}
-
-@media screen and (min-width: 992px) and (max-width: 1366px) {
-    h2 {
-        font-size: 4em;
-        line-height: 1.2;
-    }
-    #mission-statement p {
-        font-size: 1.45em;
-        line-height: 1.4em;
-    }
 }
 
 .jumbotron {
@@ -589,9 +627,7 @@ i.fa.fa-phone {
 
 .dark-section p {
     color: #fdfdfd;
-    font-size: 1.7em;
     font-weight: 300;
-    line-height: 1.45em;
 }
 
 .dark-section h2 {
@@ -744,6 +780,18 @@ i.fa.fa-phone {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
+    z-index: -5;
+    padding: 0;
+}
+
+.mission-bg-mobile {
+    background: url(../img/test2.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50%;
     z-index: -5;
     padding: 0;
 }
