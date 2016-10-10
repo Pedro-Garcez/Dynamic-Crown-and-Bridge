@@ -30,6 +30,9 @@
   }
 }*/
 
+
+
+
 strong {
     font-weight: 400;
 }
@@ -94,6 +97,7 @@ strong {
 
 html {
     background: #fdfdfd;
+    
 }
 
 body {
@@ -113,6 +117,7 @@ h5 {
     font-size: 4.6em;
     font-weight: 300;
     line-height: 1.2em;
+    
 }
 
 h4,
@@ -212,33 +217,36 @@ i.fa.fa-phone {
 }
 
 .jumbotron h1 {
-    -webkit-animation: fadein 3s;
+    /*-webkit-animation: fadein 3s;*/
     /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 3s;
+    /*-moz-animation: fadein 3s;*/
     /* Firefox < 16 */
-    -ms-animation: fadein 3s;
+    /* -ms-animation: fadein 3s;*/
     /* Internet Explorer */
-    -o-animation: fadein 3s;
+    /*-o-animation: fadein 3s;*/
     /* Opera < 12.1 */
-    animation: fadein 3s;
+    /*animation: fadein 3s;*/
     letter-spacing: 3px;
     font-size: 6em;
     margin-bottom: 70px;
     margin-top: 0;
     text-shadow: /*0 -1.5px 0 rgba(255,255,255,.5),*/
     0 3px 0 rgba(10, 27, 79, 1);
+    -webkit-animation-delay: 1s;
+    /* Chrome, Safari, Opera */
+    animation-delay: 1s;
 }
 
 .jumbotron h2 {
-    -webkit-animation: fadein 3s;
+    /*-webkit-animation: fadein 3s;*/
     /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 3s;
+    /*-moz-animation: fadein 3s;*/
     /* Firefox < 16 */
-    -ms-animation: fadein 3s;
+    /* -ms-animation: fadein 3s;*/
     /* Internet Explorer */
-    -o-animation: fadein 3s;
+    /*-o-animation: fadein 3s;*/
     /* Opera < 12.1 */
-    animation: fadein 3s;
+    /*animation: fadein 3s;*/
     font-family: 'Roboto';
     font-size: 3.5em;
     margin-top: 0;
@@ -251,15 +259,15 @@ i.fa.fa-phone {
 }
 
 .jumbotron h3 {
-    -webkit-animation: fadein 5s;
+    /*-webkit-animation: fadein 3s;*/
     /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 5s;
+    /*-moz-animation: fadein 3s;*/
     /* Firefox < 16 */
-    -ms-animation: fadein 5s;
+    /* -ms-animation: fadein 3s;*/
     /* Internet Explorer */
-    -o-animation: fadein 5s;
+    /*-o-animation: fadein 3s;*/
     /* Opera < 12.1 */
-    animation: fadein 5s;
+    /*animation: fadein 3s;*/
     font-family: 'Roboto';
     font-size: 3em;
     margin-bottom: 60px;
@@ -269,6 +277,9 @@ i.fa.fa-phone {
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
     0 1.5px 0 rgba(10, 27, 79, 1);
     font-weight: 300;
+    -webkit-animation-delay: .75s;
+    /* Chrome, Safari, Opera */
+    animation-delay: .75s;
 }
 
 .jumbotron p {
@@ -278,106 +289,73 @@ i.fa.fa-phone {
 }
 
 
-/*Media Query*/
 
-.center-mobile {}
 
-@media (max-width: 767px) {
-    .jumbotron {}
-    .jumbotron h1 {
-        font-size: 3em;
-        margin-bottom: 30px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 2px 0 rgba(10, 27, 79, 1);
-        padding-left: 3%;
-        padding-right: 3%
-    }
-    .jumbotron h2 {
-        font-size: 1.4em;
-        margin-bottom: 30px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
-        padding-left: 3%;
-        padding-right: 3%
-    }
-    .jumbotron h3 {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
-        padding-left: 3%;
-        padding-right: 3%
-    }
-    .jumbotron p {
-        display: none;
-    }
-    p {
-        font-size: 5.5vw;
-        line-height: 6.5vw;
-    }
-    h2 {
-        font-size: 14vw;
-        line-height: 14vw;
-    }
+
+#contact-icon-wrapper .fa{
+	float: left;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .jumbotron h1 {
-        font-size: 4em;
-        margin-bottom: 40px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 2px 0 rgba(10, 27, 79, 1);
-    }
-    .jumbotron h2 {
-        font-size: 2.3em;
-        margin-bottom: 40px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
-    }
-    .jumbotron h3 {
-        font-size: 1.8em;
-        margin-bottom: 40px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
-    }
+#contact-icon-wrapper {
+	margin-top: 50px;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1366px) {
-    h2 {
-        font-size: 3.5em;
-        line-height: 1em;
-    }
-    p {
-        font-size: 1.3em;
-        line-height: 1.35em;
-    }
-    h4,
-    h5 {
-        font-size: 1.4em;
-    }
-    #features img {
-        width: 93.12px;
-    }
+#contact .light-section p {
+   float: left;
+   margin-bottom: 25px;
 }
 
-@media (max-width: 768px) {
-    .arrows path {
-        stroke-width: 2px;
-    }
+#contact i {
+    font-size: 1.7em;
+    margin-right: 20px; 
+    color: rgba(26, 129, 221, 1);
 }
 
-#mission-statement {
+.light-section .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.light-section {
     padding-left: 5%;
     padding-right: 7%;
 }
 
-#mission-statement p {
+.light-section p {
     color: rgba(103, 103, 103, 1);
     font-weight: 300;
 }
 
-#mission-statement h2 {
+.light-section h2 {
     color: rgba(26, 129, 221, 1);
+}
+
+#learn-more:hover {
+    border-color: rgba(26, 129, 221, 1);
+}
+
+.btn-default:hover {
+    background: none;
+}
+
+.btn-default:active,
+.btn-default:focus {
+    border-color: rgba(26, 129, 221, 1);
+    background: none;
+    outline: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+}
+
+.btn-default {
+    border-color: rgba(26, 129, 221, 1);
+    font-weight: 500;
+    padding: 12px 24px;
+    margin-top: 20px;
+    color: rgba(26, 129, 221, 1);
+    font-size: 1.5em;
 }
 
 .jumbotron {
@@ -471,9 +449,15 @@ i.fa.fa-phone {
     outline: none;
 }
 
+.slides {
+    -webkit-animation-delay: 1.25s;
+    /* Chrome, Safari, Opera */
+    animation-delay: 1.25s;
+}
+
 .overlay {
     position: absolute;
-    background: linear-gradient(253deg, rgba(26, 129, 221, .9), rgba(85, 181, 243, .8));
+    background: linear-gradient(253deg, rgba(26, 129, 221, .8), rgba(85, 181, 243, .8));
     background-size: 100% 100%;
     /*-webkit-animation: Background 6s ease infinite;*/
     /*-moz-animation: Background 6s ease infinite;*/
@@ -584,12 +568,12 @@ i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    animation: fade-hero-a 20s infinite;
-    -webkit-animation: fade-hero-a 20s infinite;
+    animation: fade 25s infinite;
+    -webkit-animation: fade 25s infinite;
 }
 
 .hero-img-2 {
-    background: url(../img/DentalOffice.jpg);
+    background: url(../img/test6.jpg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -601,8 +585,106 @@ i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: -5;
+    animation: fade2 25s infinite;
+    -webkit-animation: fade2 25s infinite;
 }
+
+.hero-img-3 {
+    background: url(../img/test5.jpg);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    animation: fade3 25s infinite;
+    -webkit-animation: fade3 25s infinite;
+}
+
+@keyframes fade {
+    0%,
+    27% {
+        opacity: 1
+    }
+    33.333% {
+        opacity: 0
+    }
+    66.666% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0
+    }
+    33.333%,
+    60% {
+        opacity: 1
+    }
+    66.666% {
+        opacity: 0
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0
+    }
+    33.333% {
+        opacity: 0
+    }
+    66.666%,
+    93% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+
+/* 2 IMAGE HERO SLIDER */
+
+
+/*@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}*/
 
 .features-bg-img {
     background: url(../img/test3.jpg);
@@ -868,7 +950,7 @@ i.fa.fa-phone {
 }
 
 .arrow {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 50%;
     margin-left: -20px;
@@ -886,7 +968,7 @@ i.fa.fa-phone {
 
 /* ACCORDION */
 
-i:hover ~ p {
+#porcelain-restoration i:hover ~ p {
     color: #fdfdfd;
 }
 
@@ -1057,7 +1139,7 @@ i:hover ~ p {
     transition: all 0.25s ease;
     cursor: default;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 
@@ -1074,9 +1156,114 @@ i:hover ~ p {
 
 @media (max-width: 768px) {
     .navbar-default {
-        background-color: rgba(85, 181, 243, 1);
+        background-color: rgba(26, 129, 221, 1)
     }
 }
+
+
+/*Media Query*/
+
+.center-mobile {}
+
+@media (max-width: 767px) {
+    .jumbotron {}
+    .jumbotron h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 2px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
+    }
+    .jumbotron h2 {
+        font-size: 1.35em;
+        margin-bottom: 30px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 1.15px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
+    }
+    .jumbotron h3 {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 1.15px 0 rgba(10, 27, 79, 1);
+        padding-left: 3%;
+        padding-right: 3%
+    }
+    .jumbotron p {
+        display: none;
+    }
+    p {
+        font-size: 5.5vw;
+        line-height: 6.5vw;
+    }
+    h2 {
+        font-size: 14vw;
+        line-height: 14vw;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .jumbotron h1 {
+        font-size: 4em;
+        margin-bottom: 40px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 2px 0 rgba(10, 27, 79, 1);
+    }
+    .jumbotron h2 {
+        font-size: 2.3em;
+        margin-bottom: 40px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 1.15px 0 rgba(10, 27, 79, 1);
+    }
+    .jumbotron h3 {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
+        0 1.15px 0 rgba(10, 27, 79, 1);
+    }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    
+#contact-icon-wrapper p {
+    	font-size: 1.15em;
+    }
+    h2 {
+        font-size: 3.5em;
+        line-height: 1em;
+    }
+    p {
+        font-size: 1.3em;
+        line-height: 1.35em;
+    }
+    h4,
+    h5 {
+        font-size: 1.4em;
+    }
+    #features img {
+        width: 93.12px;
+    }
+    .submenu li a {
+    	font-size: 1em;
+    }
+
+    .btn-default {
+    	font-size: 1.1em;
+    	padding: 8px 18px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .arrows path {
+        stroke-width: 2px;
+    }
+}
+
+
 
 
 /*.slick-prev:after {
