@@ -716,6 +716,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55b5f3', end
     
 }
 
+.img-thumbnail {
+	background-color: rgba(255,255,255,0.30);
+    border: 1px solid rgba(221, 221, 221, 0.6);
+    padding: 8px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
 @keyframes fade-hero-a {
     0%,
     25% {
