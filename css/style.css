@@ -30,9 +30,6 @@
   }
 }*/
 
-
-
-
 strong {
     font-weight: 400;
 }
@@ -97,7 +94,6 @@ strong {
 
 html {
     background: #fdfdfd;
-    
 }
 
 body {
@@ -110,15 +106,15 @@ h1 {
 }
 
 h2,
-h3,
 h4,
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 4.6em;
     font-weight: 300;
     line-height: 1.2em;
-    
 }
+
+h3 {}
 
 h4,
 h5 {
@@ -288,26 +284,22 @@ i.fa.fa-phone {
     font-weight: 500;
 }
 
-
-
-
-
-#contact-icon-wrapper .fa{
-	float: left;
+#contact-icon-wrapper .fa {
+    float: left;
 }
 
 #contact-icon-wrapper {
-	margin-top: 50px;
+    margin-top: 50px;
 }
 
 #contact .light-section p {
-   float: left;
-   margin-bottom: 25px;
+    float: left;
+    margin-bottom: 25px;
 }
 
 #contact i {
     font-size: 1.7em;
-    margin-right: 20px; 
+    margin-right: 20px;
     color: rgba(26, 129, 221, 1);
 }
 
@@ -330,12 +322,18 @@ i.fa.fa-phone {
     color: rgba(26, 129, 221, 1);
 }
 
-#learn-more:hover {
-    border-color: rgba(26, 129, 221, 1);
+.light-section h3 {
+    color: rgba(26, 129, 221, 1);
+    font-size: 2.8em;
+    font-weight: 300;
+    margin-top: 0;
 }
+
+
 
 .btn-default:hover {
     background: none;
+    border-color: rgba(26, 129, 221, 1);
 }
 
 .btn-default:active,
@@ -1161,6 +1159,19 @@ i.fa.fa-phone {
 }
 
 
+/* Contact Form */
+
+#success_message {
+    display: none;
+}
+
+.form-control {
+	height: 50px;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+
 /*Media Query*/
 
 .center-mobile {}
@@ -1223,13 +1234,11 @@ i.fa.fa-phone {
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
     }
-    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1366px) {
-    
-#contact-icon-wrapper p {
-    	font-size: 1.15em;
+    #contact-icon-wrapper p {
+        font-size: 1.14em;
     }
     h2 {
         font-size: 3.5em;
@@ -1247,14 +1256,12 @@ i.fa.fa-phone {
         width: 93.12px;
     }
     .submenu li a {
-    	font-size: 1em;
+        font-size: 1em;
     }
-
     .btn-default {
-    	font-size: 1.1em;
-    	padding: 8px 18px;
+        font-size: 1.1em;
+        padding: 8px 18px;
     }
-    
 }
 
 @media (max-width: 768px) {
@@ -1262,8 +1269,6 @@ i.fa.fa-phone {
         stroke-width: 2px;
     }
 }
-
-
 
 
 /*.slick-prev:after {
