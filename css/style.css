@@ -152,12 +152,10 @@ p {
 #features h2 {
     color: #fdfdfd;
     font-weight: 400;
+    margin-bottom: 40px;
 }
 
-#features .row {
-    padding-left: 10%;
-    padding-right: 10%;
-}
+
 
 .logo {
     width: 50px;
@@ -698,9 +696,10 @@ i.fa.fa-phone {
     z-index: -5;
 }
 
+
 .dark-section {
-    padding-left: 5%;
-    padding-right: 7%;
+	padding-left: 10%!important;
+    padding-right: 10%!important;
 }
 
 .dark-section p {
@@ -715,6 +714,7 @@ i.fa.fa-phone {
 
 #recent-work {
     background: linear-gradient(253deg, rgba(26, 129, 221, 1), rgba(85, 181, 243, 1));
+    
 }
 
 @keyframes fade-hero-a {
