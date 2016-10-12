@@ -51,20 +51,19 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background: rgba(253, 253, 253, 1);
+  width: 4px;
+  height: 4px;
+  background: rgba(0,0,0,0.85);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.8),0 3px 10px 0 rgba(0,0,0,0.12);
 }
 
 .onepage-pagination li a.active:before{
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background: none;
-  border: 1px solid #FDFDFD;
+  border: 1px solid black;
   margin-top: -4px;
   left: 8px;
 }
