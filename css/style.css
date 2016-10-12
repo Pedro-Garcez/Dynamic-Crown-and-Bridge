@@ -121,13 +121,27 @@ h1 {
     font-family: 'Lobster', cursive;
 }
 
-h2,
-h4,
-h5 {
+
+.zero-opacity {
+opacity: 0;  
+}
+
+.full-opacity {
+opacity: 1;
+}
+
+.animation-wrapper {
+	-webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 4.6em;
     font-weight: 300;
     line-height: 1.2em;
+    
 }
 
 h3 {}
