@@ -34,7 +34,7 @@
                     <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                 </button>
                 <!--<a class="" href="#page-top"><img src="img/DynamicCrownandBridgeLogo.svg" alt="" class="logo"></a>-->
-                <a class="" href="#page-top" id="brand">Dynamic<p>Crown & Bridge</p></a>
+                <a class="" href="#page-top" id="brand"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -47,11 +47,11 @@
                         <!-- <span></span>-->
                     </li>
                     <li>
-                        <a class="services" href="#section3">SERVICES</a>
+                        <a class="services" href="#section3">WHY US</a>
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="features" href="#section4">WHY US</a>
+                        <a class="features" href="#section4">SERVICES</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -89,15 +89,17 @@
                     </div>
                 </div>
                 <p class="blink-text scroll-to-discover  scroll-hero ">SCROLL DOWN</p>
-               <a href="#section2"> <div class="arrow bounce scroll-hero"></div></a>
+                <a href="#section2">
+                    <div class="arrow bounce scroll-hero"></div>
+                </a>
             </div>
         </div>
         <div data-anchor="section2" class="section">
             <div id="at-a-glance" class="full-height-page container-fluid hidden-xs hidden-sm">
                 <div class="vcenter col-md-5 light-section">
-                    <h2 id="add-class-on-scroll" class="animated">Our mission statement.</h2>
+                    <h2 id="text" class="">Our mission statement.</h2>
                     <p id="glance-p" class="">At <strong>Dynamic Crown and Bridge</strong>, we strive to provide our doctors and their patients quality and service, along with the best possible fit, function and aesthetics - <strong>from a single unit; to a roundhouse</strong>.</p>
-                    <button id="learn-more" type="button" class="btn btn-default hvr-bounce-to-right">LEARN MORE</button>
+                    <button id="learn-more" type="button" class="btn btn-default hvr-bounce-to-right"><a href="#section3">LEARN MORE</a></button>
                 </div>
                 <div class="col-md-7 text-center mission-bg">
                     <div class="" id=""></div>
@@ -216,16 +218,16 @@
                     </div>
                     <div class="gallery">
                         <div class="row text-center">
-                            <div class="col-md-3">
+                            <div class="col-md-3 hvr-pop">
                                 <a href="img/case1showcase.jpg" data-title="Caption" data-lightbox="Dental Prosthetics"><img src="img/case1showcase.jpg" width="200px" class="img-thumbnail" /></a>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 hvr-pop">
                                 <a href="img/case2showcase.jpg" data-title="Caption" data-lightbox="Dental Prosthetics"><img src="img/case2showcase.jpg" width="200px" class="img-thumbnail" /></a>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 hvr-pop">
                                 <a href="img/case3showcase.jpg" data-title="Caption" data-lightbox="Dental Prosthetics"><img src="img/case3showcase.jpg" width="200px" class="img-thumbnail" /></a>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 hvr-pop">
                                 <a href="img/case4showcase.jpg" data-title="Caption" data-lightbox="Dental Prosthetics"><img src="img/case4showcase.jpg" width="200px" class="img-thumbnail" /></a>
                             </div>
                         </div>
@@ -329,10 +331,11 @@
     <script type="text/javascript" src="js/accordion.js"></script>
     <script type="text/javascript" src="js/agency.js"></script>
     <script type="text/javascript" src="js/jquery.viewportchecker.js"></script>
-    <script type="text/javascript" src="js/animationScroll.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    </script>
     <script>
     $(document).ready(function() {
         $('#fullpagejs').fullpage({
@@ -340,8 +343,24 @@
             fitToSection: false,
             verticalCentered: false,
             slideSelector: '.fullpageslide',
-            navigation: true
+            navigation: true,
+            onLeave: function(index, nextIndex, direction) {
+                if (nextIndex === 3) {
+                    $('#text').addClass('fadeOutLeft');
+                }
+
+                if (index === 3) {
+                    $('#text').removeClass('fadeOutLeft');
+                }
+
+                console.log('index:', index, 'nextIndex:', nextIndex, 'direction:', direction);
+            },
+            afterLoad: function(anchorLink, index) {
+                $('#text').addClass('animated fadeInLeft');
+            }
+
         });
+
     });
     </script>
     <script>

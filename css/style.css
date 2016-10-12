@@ -98,6 +98,16 @@ strong {
     width: 100%;
 }
 
+#at-a-glance a {
+	text-decoration: none;
+}
+
+#at-a-glance a:hover, #at-a-glance a:active, #at-a-glance a:focus, #at-a-glance a:link, #at-a-glance a:visited {
+	color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
 html {
     background: #fdfdfd;
 }
