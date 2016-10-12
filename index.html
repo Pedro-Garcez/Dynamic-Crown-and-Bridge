@@ -17,6 +17,7 @@
     <link href="css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -42,23 +43,23 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="welcome" href="#">WELCOME</a>
+                        <a class="welcome" href="#section2">WELCOME</a>
                         <!-- <span></span>-->
                     </li>
                     <li>
-                        <a class="services" href="#">SERVICES</a>
+                        <a class="services" href="#section3">SERVICES</a>
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="features" href="#">WHY US</a>
+                        <a class="features" href="#section4">WHY US</a>
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">RECENT WORK</a>
+                        <a class="page-scroll" href="#section5">RECENT WORK</a>
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
+                        <a class="page-scroll" href="#section6">CONTACT</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -71,26 +72,27 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
-            <div class="jumbotron full-height-page" id="hero">
+    <div id="fullpagejs">
+        <div data-anchor="section1" class="section">
+            <div class=" jumbotron full-height-page" id="hero">
                 <div class="overlay" id=""></div>
                 <div class="hero-img-1"></div>
                 <div class="hero-img-2"></div>
                 <div class="hero-img-3"></div>
                 <div class="vcenter">
-                    <h3 class="display-3 text-center animated fadeInLeft">WELCOME TO</h3>
-                    <h1 class="display-3 text-center animated fadeInLeft">Dynamic Crown & Bridge</h1>
-                    <div class="slides animated fadeInLeft">
-                        <h2 class="display-3 text-center slide ">DENTAL LABORATORY</h2>
+                    <h3 class="display-3 text-center ">WELCOME TO</h3>
+                    <h1 class="display-3 text-center ">Dynamic Crown & Bridge</h1>
+                    <div class="slides">
+                        <h2 class="display-3 text-center slide">DENTAL LABORATORY</h2>
                         <h2 class="display-3 text-center slide">25 YEARS OF EXPERIENCE</h2>
                         <h2 class="display-3 text-center slide">WEST PALM BEACH</h2>
                     </div>
                 </div>
                 <p class="blink-text scroll-to-discover  scroll-hero ">SCROLL DOWN</p>
-                <div class="arrow bounce scroll-hero"></div>
+               <a href="#section2"> <div class="arrow bounce scroll-hero"></div></a>
             </div>
-        
-        
+        </div>
+        <div data-anchor="section2" class="section">
             <div id="at-a-glance" class="full-height-page container-fluid hidden-xs hidden-sm">
                 <div class="vcenter col-md-5 light-section">
                     <h2 id="add-class-on-scroll" class="animated">Our mission statement.</h2>
@@ -110,17 +112,16 @@
                     <p class="">At <strong>Dynamic Crown and Bridge</strong>, we strive to provide our doctors and their patients quality and service, along with the best possible fit, function and aesthetics - <strong>from a single unit; to a roundhouse</strong>.</p>
                 </div>
             </div>
-        
-        
+        </div>
+        <div data-anchor="section3" class="section">
             <div id="features" class="full-height-page container-fluid hidden-xs hidden-sm dark-section">
                 <div class="overlay-dark"></div>
                 <div class="features-bg-img"></div>
-
                 <div class="vcenter">
-                        <div class="col-md-12  text-center" id="">
-                            <h2>Why choose us.</h2>
-                            <p>At Dynamic Crown and Bridge, we bring commitment and passion to every case. Put simply - if you want consistent, reliable, and timely service; choose Dynamic Crown and Bridge as your dental laboratory today!</p>
-                        </div>
+                    <div class="col-md-12  text-center" id="">
+                        <h2>Why choose us.</h2>
+                        <p>At Dynamic Crown and Bridge, we bring commitment and passion to every case. Put simply - if you want consistent, reliable, and timely service; choose Dynamic Crown and Bridge as your dental laboratory today!</p>
+                    </div>
                     <div class="row">
                         <div class="col-md-4 text-center">
                             <img src="img/feature-icons-04.png">
@@ -134,8 +135,8 @@
                             <img src="img/feature-icons-05.png">
                             <h4>Personal service</h4>
                         </div>
-                        </div>
-                         <div class="row">
+                    </div>
+                    <div class="row">
                         <div class="col-md-4 text-center">
                             <img src="img/feature-icons-06.png">
                             <h4>Free pick-up and delivery</h4>
@@ -148,14 +149,12 @@
                             <img src="img/feature-icons-01.png">
                             <h4>Made in West Palm Beach FL</h4>
                         </div>
-                        </div>
-                    
+                    </div>
                 </div>
             </div>
-        
-        
+        </div>
+        <div data-anchor="section4" class="section">
             <div id="services" class="full-height-page container-fluid hidden-xs hidden-sm">
-                
                 <div class="vcenter col-md-5 col-sm-12 light-section">
                     <h2>Services.</h2>
                     <p>All our work is done <strong>on premises in our lab</strong>. Select a service below to learn more.</p>
@@ -205,10 +204,9 @@
                     <div class="" id=""></div>
                 </div>
             </div>
-        
-        
+        </div>
+        <div data-anchor="section5" class="section">
             <div id="recent-work" class="dark-section full-height-page container-fluid hidden-xs hidden-sm">
-                
                 <div class="vcenter">
                     <div class="row  ">
                         <div class=" col-md-12  text-center" id="">
@@ -234,8 +232,8 @@
                     </div>
                 </div>
             </div>
-        
-        
+        </div>
+        <div data-anchor="section6" class="section">
             <div id="contact" class="full-height-page container-fluid hidden-xs hidden-sm">
                 <div class="vcenter col-md-5 light-section">
                     <h2>Get in touch with us today.</h2>
@@ -310,7 +308,7 @@
                     </script>
                 </div>
             </div>
-        
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
@@ -333,7 +331,19 @@
     <script type="text/javascript" src="js/jquery.viewportchecker.js"></script>
     <script type="text/javascript" src="js/animationScroll.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    $(document).ready(function() {
+        $('#fullpagejs').fullpage({
+            loopBottom: true,
+            fitToSection: false,
+            verticalCentered: false,
+            slideSelector: '.fullpageslide',
+            navigation: true
+        });
+    });
+    </script>
     <script>
     (function(b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
