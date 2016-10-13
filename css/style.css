@@ -35,7 +35,7 @@
     
     #fp-nav ul li a span {
         background: #fdfdfd;
-        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     }
     
     #brand {
@@ -122,8 +122,6 @@
     h1 {
         font-family: 'Lobster', cursive;
     }
-    
-    
     
     .animation {
         display: none;
@@ -250,6 +248,15 @@
     
     i.fa.fa-phone {
         margin-right: 3px;
+    }
+    
+    #fp-nav ul li .fp-tooltip.right {
+        top: -2.5px;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-weight: 400;
+        text-shadow: 1px 1px 3px #000;
+        letter-spacing: 1px;
     }
     
     .jumbotron h1 {
