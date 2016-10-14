@@ -462,6 +462,12 @@ i.fa.fa-phone {
     color: rgba(26, 129, 221, 1);
 }
 
+
+.hvr-bounce-to-right:before{
+    background-color: rgba(26, 129, 221, 1);
+}
+
+
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus,
@@ -806,6 +812,14 @@ i.fa.fa-phone {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.16);
 }
 
+.lb-data .lb-number {
+    font-size: 1.25em;
+}
+
+.lb-data .lb-caption {
+    font-size: 2em;
+    line-height: 2em;
+}
 
 /* Contact Section */
 
