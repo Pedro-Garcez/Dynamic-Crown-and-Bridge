@@ -53,6 +53,9 @@ h3 {
     margin-top: 0;
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 /* MOBILE MENU */
 
@@ -181,17 +184,17 @@ h3 {
     font-size: .35em;
 }
 
-
-/* NAV STUFF END */
-
-
-/* HERO SECTION */
-
 .logo {
     width: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+/* NAV STUFF END */
+
+
+/* HERO SECTION */
 
 i.fa.fa-phone {
     margin-right: 3px;
@@ -423,6 +426,20 @@ i.fa.fa-phone {
     animation: bounce 2s infinite;
 }
 
+.slick-slide:focus {
+    outline: none;
+}
+
+.slides {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
 
 /* HERO SECTION END */
 
@@ -466,20 +483,6 @@ i.fa.fa-phone {
     margin-top: 15px;
     color: rgba(26, 129, 221, 1);
     font-size: 1.5em;
-}
-
-.slick-slide:focus {
-    outline: none;
-}
-
-.slides {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
 }
 
 .mission-bg {
@@ -618,6 +621,9 @@ i.fa.fa-phone {
     font-weight: 400;
 }
 
+
+/* Services stuff */
+
 .services-bg {
     background: url(../img/dental-tools.jpg);
     background-position: center center;
@@ -680,6 +686,10 @@ i.fa.fa-phone {
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     margin-top: 20px;
+}
+
+.accordion .link p:active {
+    background: rgba(26, 129, 221, 1);
 }
 
 .accordion .link p {
@@ -809,7 +819,7 @@ i.fa.fa-phone {
     font-size: 1.4em;
 }
 
-#contact a {
+#contact a, #footer li a {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -846,6 +856,34 @@ i.fa.fa-phone {
     font-size: 1.7em;
     margin-right: 20px;
     color: rgba(26, 129, 221, 1);
+}
+
+#footer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a81dd+41,55b5f3+100 */
+    background: #0074DB;
+    padding: 30px 150px 30px 150px;
+}
+
+#footer li {
+    margin-bottom: 0;
+    list-style: none;
+    font-weight: 300;
+}
+
+#footer li:last-child,
+#footer ul {
+    margin-bottom: 0px;
+}
+
+
+
+
+#footer li a {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #fdfdfd;
+    margin-left: 10px;
 }
 
 
@@ -1167,8 +1205,6 @@ i.fa.fa-phone {
 }*/
 
 
-
-
 /*Media Query*/
 
 .center-mobile {}
@@ -1242,7 +1278,7 @@ i.fa.fa-phone {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1366px) {
+@media screen and (min-width: 993px) and (max-width: 1366px) {
     #contact-icon-wrapper p {
         font-size: 1.14em;
     }
@@ -1271,12 +1307,6 @@ i.fa.fa-phone {
     .btn-default {
         font-size: 1.1em;
         padding: 8px 18px;
-    }
-}
-
-@media (max-width: 768px) {
-    .arrows path {
-        stroke-width: 2px;
     }
 }
 
