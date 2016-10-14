@@ -10,9 +10,9 @@ $(".slides").slick({
         pauseOnFocus: false,
         dots: false,
         draggable: false,
-        vertical: true,
-        cssEase: 'ease-out',
-        speed: 750,
+        vertical: false,
+        cssEase: 'ease',
+        speed: 600,
         responsive: [{
             breakpoint: 1024,
             settings: {

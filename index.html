@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -18,7 +19,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
+    
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body id="page-top" class="index">
@@ -27,7 +30,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!-- Navigation-->
-    <nav id="mainNav" class="nav-custom-dynamic navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav id="mainNav" class="nav-custom-dynamic navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -99,7 +102,7 @@
             <div id="at-a-glance" class="full-height-page container-fluid hidden-xs hidden-sm">
                 <div class="vcenter col-md-5 light-section">
                     <div class="animation-wrapper animation zero-opacity">
-                        <h2 id="" class="">Our mission statement.</h2>
+                        <h2 id="" class="navbar-opacity">Our mission statement.</h2>
                         <p id="glance-p" class="">At <strong>Dynamic Crown and Bridge</strong>, we strive to provide our doctors and their patients quality and service, along with the best possible fit, function and aesthetics - <strong>from a single unit; to a roundhouse</strong>.</p>
                         <button id="learn-more" type="button" class="btn btn-default hvr-bounce-to-right"><a href="#section3">LEARN MORE</a></button>
                     </div>
@@ -225,7 +228,7 @@
                         <div class=" col-md-12  text-center" id="">
                             <div class="animation-wrapper animation">
                                 <h2>Check out our recent work.</h2>
-                                <p>All work overseen personally by our Certified Dental Technician, Edward Cunningham. With over <strong>25</strong> years of experience serving in West Palm Beach Florida - rest assured that your cases are in good hands! Select an image below to begin browsing the gallery.</p>
+                                <p>All work overseen personally by our Certified Dental Technician, William Saldarriaga. With over <strong>25</strong> years of experience serving in West Palm Beach Florida - rest assured that your cases are in good hands! Select an image below to begin browsing the gallery.</p>
                                 <div class="gallery">
                                     <div class="row text-center">
                                         <div class="col-md-3 hvr-pulse-grow">
@@ -356,13 +359,19 @@
     <!--<script type="text/javascript" src="js/FadeOnScroll.js"></script>-->
     <script type="text/javascript" src="js/slides.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
-    <script type="text/javascript" src="js/agency.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/agency.js"></script>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-    $(document).ready(function() {
-        $('overlay-dark-mobile').click(1000);
+    $('.navbar-toggle').click(function() {
+        $('#overlay-dark-mobile').toggleClass('overlay-dark-mobile-active');
+
+    });
+     $('#bs-example-navbar-collapse-1 ul li a').click(function(){ 
+            console.log("works");
+            $('.navbar-toggle:visible').click();
     });
     </script>
     <script>
