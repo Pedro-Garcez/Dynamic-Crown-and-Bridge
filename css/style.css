@@ -359,16 +359,14 @@ h3 {
     margin-top: 0;
 }
 
-.btn-default:hover {
-    background: none;
-    border-color: rgba(26, 129, 221, 1);
-}
-
+.btn-default:hover,
 .btn-default:active,
-.btn-default:focus {
+.btn-default:focus,
+.btn-default:active:focus {
     border-color: rgba(26, 129, 221, 1);
     background: none;
     outline: none;
+    color: #fdfdfd;
 }
 
 .btn {
@@ -1005,10 +1003,6 @@ h3 {
 
 /* ACCORDION */
 
-#porcelain-restoration i:hover ~ p {
-    color: #fdfdfd;
-}
-
 #porcelain-restoration:hover {
     background: rgba(26, 129, 221, 1);
     -webkit-border-radius: 4px 4px 0px 0px;
@@ -1017,52 +1011,27 @@ h3 {
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
 
-#porcelain-restoration p:hover ~ i.fa-chevron-down {
+#porcelain-restoration p:hover ~ i.fa-chevron-down,
+#porcelain-restoration p:hover,
+#porcelain-restoration i:hover ~ p,
+#porcelain-to-metal p:hover ~ i.fa-chevron-down,
+#porcelain-to-metal p:hover,
+#full-cast-crowns p:hover ~ i.fa-chevron-down,
+#full-cast-crowns p:hover,
+#crown-under-partial p:hover ~ i.fa-chevron-down,
+#crown-under-partial p:hover
+{
     color: #fdfdfd;
 }
 
-#porcelain-restoration p:hover {
-    color: #fdfdfd;
-}
 
-#porcelain-to-metal:hover {
+
+#full-cast-crowns:hover, #crown-under-partial:hover, #porcelain-to-metal:hover  {
     background: rgba(26, 129, 221, 1);
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
 
-#porcelain-to-metal p:hover ~ i.fa-chevron-down {
-    color: #fdfdfd;
-}
 
-#porcelain-to-metal p:hover {
-    color: #fdfdfd;
-}
-
-#full-cast-crowns:hover {
-    background: rgba(26, 129, 221, 1);
-    border-bottom: 1px solid rgba(40, 147, 241, 1);
-}
-
-#full-cast-crowns p:hover ~ i.fa-chevron-down {
-    color: #fdfdfd;
-}
-
-#full-cast-crowns p:hover {
-    color: #fdfdfd;
-}
-
-#crown-under-partial:hover {
-    background: rgba(26, 129, 221, 1);
-    border-bottom: 1px solid rgba(40, 147, 241, 1);
-}
-
-#crown-under-partial p:hover ~ i.fa-chevron-down {
-    color: #fdfdfd;
-}
-
-#crown-under-partial p:hover {
-    color: #fdfdfd;
-}
 
 .accordion ul {
     list-style-type: none;
