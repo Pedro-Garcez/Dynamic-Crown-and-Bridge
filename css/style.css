@@ -104,12 +104,37 @@ a:hover {
 
 /* NAV STUFF */
 
+.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#mainNav {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .nav-custom-dynamic {
     /*background: rgba(0,0,0,0.3);*/
     padding-left: 30px;
     padding-right: 30px;
     background: none;
     /*background: rgba(255, 255, 255, 0.7);*/
+}
+
+.nav-custom-dynamic-on-scroll {
+    color: red;
+    padding: 0 30px 0 30px;
+    background: none;
+    background: #fdfdfd;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -119,7 +144,7 @@ a:hover {
     margin-left: 20px;
     margin-right: 20px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 0;
     padding-right: 0;
     text-decoration: none;
@@ -136,9 +161,6 @@ a:hover {
 }*/
 
 .navbar-default {
-    /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.22);*/
-    -webkit-box-shadow: none;
-    box-shadow: none;
     border: none;
 }
 
@@ -587,15 +609,10 @@ i.fa.fa-phone {
     visibility: hidden;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
-    ;
     -moz-transition: all 0.5s ease;
-    ;
     -ms-transition: all 0.5s ease;
-    ;
     -o-transition: all 0.5s ease;
-    ;
     transition: all 0.5s ease;
-    ;
 }
 
 .overlay-dark-mobile-active {
@@ -877,7 +894,11 @@ i.fa.fa-phone {
 
 #footer {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a81dd+41,55b5f3+100 */
-    background: #0074DB;
+    background: linear-gradient(253deg, #312AE2, #1A81DD , #0BE090);
+    background-size: 300% 300%;
+    -webkit-animation: Background 18s ease infinite;
+    -moz-animation: Background 18s ease infinite;
+    animation: Background 18s ease infinite;
     padding: 30px 150px 30px 150px;
 }
 
@@ -1225,9 +1246,7 @@ i.fa.fa-phone {
 
 @media (max-width: 360px) {
     .jumbotron h2 {
-        
         font-size: 1.25em!important;
-        
     }
 }
 
@@ -1235,17 +1254,14 @@ i.fa.fa-phone {
     #fp-nav {
         display: none;
     }
-
     .navbar-default .navbar-collapse {
         border-bottom-style: solid;
         border: 1px rgba(255, 255, 255, 0.11);
     }
-
     .nav-custom-dynamic {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .nav>li {
         border-bottom: 1px rgba(255, 255, 255, 0.11);
         border-bottom-style: solid;

@@ -3,7 +3,7 @@ $(".slides").slick({
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        fade: false,
+        fade: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,
@@ -12,7 +12,7 @@ $(".slides").slick({
         draggable: false,
         vertical: false,
         cssEase: 'ease',
-        speed: 600,
+        speed: 1750,
         responsive: [{
             breakpoint: 1024,
             settings: {

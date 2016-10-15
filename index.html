@@ -30,7 +30,7 @@
     <nav id="mainNav" class="nav-custom-dynamic navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header  ">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                 </button>
@@ -38,8 +38,8 @@
                 <a class="" href="#page-top" id="brand"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav center-me ">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -411,6 +411,18 @@
                 $(leavingSection).find(".animation").removeClass('animated fadeInLeft');
 
                 $(leavingSection).find(".animation").addClass('animated fadeOutLeft');
+
+                if (nextIndex === 1 && direction === 'up') {
+                    $('#mainNav').removeClass('nav-custom-dynamic-on-scroll');
+                    $('#mainNav').addClass('nav-custom-dynamic');
+                }
+
+                if (index === 1 && direction === 'down') {
+                    $('#mainNav').addClass('nav-custom-dynamic-on-scroll');
+
+                }
+
+
             }
 
         });
