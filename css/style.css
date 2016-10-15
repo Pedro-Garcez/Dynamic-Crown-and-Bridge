@@ -69,7 +69,7 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin-right: 5px;
+    margin-right: 30px;
 }
 
 .navbar-toggle .fa-bars {
@@ -1223,7 +1223,19 @@ i.fa.fa-phone {
 
 .center-mobile {}
 
+@media (max-width: 360px) {
+    .jumbotron h2 {
+        
+        font-size: 1.25em!important;
+        
+    }
+}
+
 @media (max-width: 767px) {
+    #fp-nav {
+        display: none;
+    }
+
     .navbar-default .navbar-collapse {
         border-bottom-style: solid;
         border: 1px rgba(255, 255, 255, 0.11);
@@ -1261,8 +1273,8 @@ i.fa.fa-phone {
         margin-bottom: 30px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(35, 35, 35, 1);
-        padding-left: 3%;
-        padding-right: 3%
+        padding-left: .5%;
+        padding-right: .5%
     }
     .jumbotron h3 {
         font-size: 1.2em;
@@ -1291,20 +1303,20 @@ i.fa.fa-phone {
         margin-left: 15px;
     }
     .jumbotron h1 {
-        font-size: 4em;
-        margin-bottom: 40px;
+        font-size: 5.1em;
+        margin-bottom: 65px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 2px 0 rgba(10, 27, 79, 1);
     }
     .jumbotron h2 {
         font-size: 2.3em;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
     }
     .jumbotron h3 {
         font-size: 1.8em;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
     }
