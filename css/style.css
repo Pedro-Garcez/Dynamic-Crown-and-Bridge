@@ -57,6 +57,7 @@ a:hover {
     text-decoration: none;
 }
 
+
 /* MOBILE MENU */
 
 .navbar-toggle .fa-bars:after {
@@ -67,11 +68,13 @@ a:hover {
     font-weight: 300;
 }
 
-.navbar-toggle {}
+.navbar-toggle {
+    margin-right: 5px;
+}
 
 .navbar-toggle .fa-bars {
     color: #fdfdfd;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .navbar-default .navbar-toggle {
@@ -462,11 +465,9 @@ i.fa.fa-phone {
     color: rgba(26, 129, 221, 1);
 }
 
-
-.hvr-bounce-to-right:before{
+.hvr-bounce-to-right:before {
     background-color: rgba(26, 129, 221, 1);
 }
-
 
 .btn-default:hover,
 .btn-default:active,
@@ -821,6 +822,7 @@ i.fa.fa-phone {
     line-height: 2em;
 }
 
+
 /* Contact Section */
 
 #success_message {
@@ -833,7 +835,8 @@ i.fa.fa-phone {
     font-size: 1.4em;
 }
 
-#contact a, #footer li a {
+#contact a,
+#footer li a {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -888,9 +891,6 @@ i.fa.fa-phone {
 #footer ul {
     margin-bottom: 0px;
 }
-
-
-
 
 #footer li a {
     -webkit-transition: all 0.5s ease;
@@ -1224,6 +1224,20 @@ i.fa.fa-phone {
 .center-mobile {}
 
 @media (max-width: 767px) {
+    .navbar-default .navbar-collapse {
+        border-bottom-style: solid;
+        border: 1px rgba(255, 255, 255, 0.11);
+    }
+
+    .nav-custom-dynamic {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav>li {
+        border-bottom: 1px rgba(255, 255, 255, 0.11);
+        border-bottom-style: solid;
+    }
     .arrows path {
         stroke-width: 2px;
     }
@@ -1272,6 +1286,10 @@ i.fa.fa-phone {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-default .navbar-nav>li>a {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
     .jumbotron h1 {
         font-size: 4em;
         margin-bottom: 40px;

@@ -420,7 +420,11 @@
         });
         $(".btn").mouseup(function() {
             $(this).blur();
-        })
+        });
+
+        $(".accordion .link").click(function() {
+            $('.accordion .link').unbind('mouseout');
+        });
 
     });
     </script>
