@@ -1,6 +1,9 @@
 @import 'main.css';
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+
+
 strong {
     font-weight: 400;
 }
@@ -502,8 +505,8 @@ i.fa.fa-phone {
 .divider-white {
     border: solid 2px;
     display: block;
-    width: 70px;
-    margin: 2.25% auto;
+    width: 7vw;
+    margin: 2% auto;
     border-color: rgba(253, 253, 253, 1);
 }
 
@@ -664,7 +667,7 @@ i.fa.fa-phone {
 .dark-section p {
     color: #fdfdfd;
     font-weight: 300;
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
     padding-left: 10%;
     padding-right: 10%;
 }
