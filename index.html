@@ -40,11 +40,15 @@
             <div class="collapse navbar-collapse  " id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav center-me">
                     <li>
-                        <a class="white-link" href="#section2">WELCOME</a>
+                        <a class="white-link" href="#section1">WELCOME</a>
                         <!-- <span></span>-->
                     </li>
                     <li>
-                        <a class="white-link" href="#section3">WHY US</a>
+                        <a class="white-link" href="#section2">MISSION STATEMENT</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="white-link" href="#section3">AT A GLANCE</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -52,7 +56,7 @@
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="white-link" href="#section5">RECENT WORK</a>
+                        <a class="white-link" href="#section5">GALLERY</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -83,11 +87,16 @@
             <div class="collapse navbar-collapse  " id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav center-me  ">
                     <li>
-                        <a class="nav-link-colors link-white-underline white-link" href="#section2">WELCOME</a>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section1">WELCOME</a>
                         <!-- <span></span>-->
                     </li>
                     <li>
-                        <a class="nav-link-colors link-white-underline white-link" href="#section3">WHY US</a>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section2">MISSION STATEMENT</a>
+                        <!-- <span></span>-->
+                    </li>
+
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section3">AT A GLANCE</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -95,7 +104,7 @@
                         <!--<span></span>-->
                     </li>
                     <li>
-                        <a class="nav-link-colors link-white-underline white-link" href="#section5">RECENT WORK</a>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section5">GALLERY</a>
                         <!--<span></span>-->
                     </li>
                     <li>
@@ -116,9 +125,11 @@
         <div data-anchor="section1" class="section">
             <div class=" jumbotron full-height-page" id="hero">
                 <div class="overlay" id=""></div>
-                <div class="hero-img-1 slide"></div>
-                <div class="hero-img-2 slide"></div>
-                <div class="hero-img-3 slide"></div>
+                <div id="hero-slide-container" class="">
+                <div class="hero-img-1 "></div>
+                <div class="hero-img-2 "></div>
+                <div class="hero-img-3 "></div>
+                </div>
                 <div class="vcenter ">
                     <h3 class="display-3 text-center animation zero-opacity">WELCOME TO</h3>
                     <h1 class="display-3 text-center animation zero-opacity">Dynamic Crown & Bridge</h1>
@@ -300,7 +311,7 @@
                             <div class="animation-wrapper animation">
                                 <h2>Check out some of our work.</h2>
                                 <div class="divider-white"></div>
-                                <p>All work overseen personally by our Certified Dental Technician, William Saldarriaga. With over <strong>25</strong> years of experience serving in West Palm Beach Florida - rest assured that your cases are in good hands! Select an image below to begin browsing the gallery.</p>
+                                <p>All work overseen personally by our Certified Dental Technician, William Saldarriaga. With over <strong>25</strong> years of experience serving in West Palm Beach Florida - you can rest assured that your cases are in good hands! Select an image below to begin browsing the gallery.</p>
                                 <div class="gallery">
                                     <div class="row text-center">
                                         <div class="col-md-3 ">
@@ -329,11 +340,11 @@
                 <div class="vcenter col-md-5 light-section">
                     <div class="animation-wrapper animation">
                         <h2>Get in touch.</h2>
-                        <p class="">Simply fill out the form below, call, or shoot us an email to get in touch.</p>
+                        <p class="">Feel free to call or email us, or simply fill out the form below to get in touch.</p>
                         <div id="contact-icon-wrapper">
                             <div class="col-md-12">
                                 <i class="fa fa-phone"></i>
-                                <p>561-555-5555</p>
+                                <p>561-945-1901</p>
                             </div>
                             <div class="col-md-12">
                                 <i class="fa fa-map-marker"></i>
@@ -476,7 +487,7 @@
             fitToSection: true,
             verticalCentered: true,
             slideSelector: '.fullpageslide',
-            navigationTooltips: ['Welcome', 'Mission', 'Why Us', 'Services', 'Gallery', 'Contact Us'],
+            navigationTooltips: ['Welcome', 'Mission', 'At a Glance', 'Services', 'Gallery', 'Contact Us'],
             navigation: true,
 
             afterLoad: function(anchorLink, index) {
