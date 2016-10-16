@@ -877,6 +877,10 @@ i.fa.fa-phone {
 
 /* Contact Section */
 
+textarea {
+   resize: none;
+}
+
 #success_message {
     display: none;
 }
