@@ -18,6 +18,7 @@ body {
 
 h1 {
     font-family: 'Lobster', cursive;
+    color: #fdfdfd;
 }
 
 h2 {
@@ -25,6 +26,8 @@ h2 {
     font-size: 4.6em;
     font-weight: 300;
     line-height: 1.2em;
+    margin-top: 5%;
+    color: rgba(26, 129, 221, 1);
 }
 
 h4,
@@ -42,6 +45,8 @@ p {
     font-size: 1.7em;
     font-weight: 300;
     line-height: 1.45em;
+    color: rgba(103, 103, 103, 1);
+    font-weight: 300;
 }
 
 h3 {
@@ -293,9 +298,7 @@ i.fa.fa-phone {
 }
 
 .jumbotron p {
-    font-size: 1.4em;
-    margin-bottom: 0;
-    font-weight: 500;
+    color: #fdfdfd;
 }
 
 .jumbotron {
@@ -400,10 +403,10 @@ i.fa.fa-phone {
 
 .vcenter {
     position: relative;
-    top: calc(50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    top: calc(51%);
+    -webkit-transform: translateY(-51%);
+    -ms-transform: translateY(-51%);
+    transform: translateY(-51%);
 }
 
 .arrows {
@@ -492,7 +495,7 @@ i.fa.fa-phone {
     border: solid 2px;
     display: block;
     width: 70px;
-    margin: 25px auto;
+    margin: 2.25% auto;
     border-color: #FF580D;
 }
 
@@ -500,7 +503,7 @@ i.fa.fa-phone {
     border: solid 2px;
     display: block;
     width: 70px;
-    margin: 25px auto;
+    margin: 2.25% auto;
     border-color: rgba(253, 253, 253, 1);
 }
 
@@ -512,15 +515,6 @@ i.fa.fa-phone {
 .light-section {
     padding-left: 5%;
     padding-right: 7%;
-}
-
-.light-section p {
-    color: rgba(103, 103, 103, 1);
-    font-weight: 300;
-}
-
-.light-section h2 {
-    color: rgba(26, 129, 221, 1);
 }
 
 .hvr-bounce-to-right:before {
@@ -663,8 +657,8 @@ i.fa.fa-phone {
 }
 
 .dark-section {
-    padding-left: 10%!important;
-    padding-right: 10%!important;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .dark-section p {
@@ -878,7 +872,7 @@ i.fa.fa-phone {
 /* Contact Section */
 
 textarea {
-   resize: none;
+    resize: none;
 }
 
 #success_message {
@@ -1272,25 +1266,42 @@ textarea {
         display: none;
     }
     p {
-        font-size: 4vw;
-        line-height: 4vw;
+        font-size: 4.3vw;
+        line-height: 4.9vw;
+        font-weight: 300;
     }
     h2 {
-        font-size: 9.5vw;
-        line-height: 9.5vw;
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    h4 {
+        font-size: 7vw;
+        line-height: 7vw font-weight: 300;
+    }
+    .divider-white {
+        border: solid 1px;
+        border-color: rgba(253, 253, 253, 1);
+    }
+    .dark-section,
+    .dark-section p {
+        padding: 0 2.5%;
+    }
+    #features img {
+        width: 30%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .navbar-default .navbar-nav>li>a {
-        margin-right: 15px;
-        margin-left: 15px;
+        margin-right: 12px;
+        margin-left: 12px;
     }
     .jumbotron h1 {
         font-size: 4.5em;
         margin-bottom: 45px;
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 2px 0 rgba(10, 27, 79, 1);
+        padding: 0 5%;
     }
     .jumbotron h2 {
         font-size: 1.8em;
@@ -1397,5 +1408,8 @@ textarea {
 @media (max-width: 992px) {
     #fp-nav.right {
         right: 0px;
+    }
+    #features img {
+        margin: 5% auto;
     }
 }
