@@ -23,4 +23,8 @@ $(function() {
 	}	
 
 	var accordion = new Accordion($('#accordion'), false);
+	var accordionMobile = new Accordion($('#accordion-mobile'), false);
+
 });
+
+
