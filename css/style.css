@@ -728,10 +728,10 @@ i.fa.fa-phone {
     padding: 0;
 }
 
-#mobile-services
+
 /* ACCORDION */
 
-#porcelain-restoration:hover {
+.porcelain-restoration:hover {
     background: rgba(26, 129, 221, 1);
     -webkit-border-radius: 4px 4px 0px 0px;
     -moz-border-radius: 4px 4px 0px 0px;
@@ -739,21 +739,21 @@ i.fa.fa-phone {
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
 
-#porcelain-restoration p:hover ~ i.fa-chevron-down,
-#porcelain-restoration p:hover,
-#porcelain-restoration i:hover ~ p,
-#porcelain-to-metal p:hover ~ i.fa-chevron-down,
-#porcelain-to-metal p:hover,
-#full-cast-crowns p:hover ~ i.fa-chevron-down,
-#full-cast-crowns p:hover,
-#crown-under-partial p:hover ~ i.fa-chevron-down,
-#crown-under-partial p:hover {
+.porcelain-restoration p:hover ~ i.fa-chevron-down,
+.porcelain-restoration p:hover,
+.porcelain-restoration i:hover ~ p,
+.porcelain-to-metal p:hover ~ i.fa-chevron-down,
+.porcelain-to-metal p:hover,
+.full-cast-crowns p:hover ~ i.fa-chevron-down,
+.full-cast-crowns p:hover,
+.crown-under-partial p:hover ~ i.fa-chevron-down,
+.crown-under-partial p:hover {
     color: #fdfdfd;
 }
 
-#full-cast-crowns:hover,
-#crown-under-partial:hover,
-#porcelain-to-metal:hover {
+.full-cast-crowns:hover,
+.crown-under-partial:hover,
+.porcelain-to-metal:hover {
     background: rgba(26, 129, 221, 1);
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
@@ -1081,7 +1081,7 @@ textarea {
         line-height: 10vw;
     }
     h4 {
-        font-size: 7vw;
+        font-size: 6vw;
         line-height: 7vw font-weight: 300;
     }
     .divider-white {
