@@ -1444,7 +1444,6 @@ textarea {
     #features img {
         margin: 5% auto;
     }
-    @media (max-width: 991px) {
     .navbar-header {
         float: none;
     }

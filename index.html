@@ -20,47 +20,46 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body id="page-top" class="index">
-<nav id="mainNav" class="nav-custom-dynamic navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown"><i class="fa fa-bars"></i></button>
+    <nav id="mainNav" class="nav-custom-dynamic navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse" id="dropdown">
+                <ul class="nav navbar-nav center-me">
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link " href="#section1">WELCOME</a>
+                        <!-- <span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section2">MISSION STATEMENT</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section3">AT A GLANCE</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section4">SERVICES</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section5">GALLERY</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#section6">CONTACT</a>
+                        <!--<span></span>-->
+                    </li>
+                    <li>
+                        <a class="nav-link-colors link-white-underline white-link" href="#contact"><i class="fa fa-phone"></i>561-555-5555</a>
+                        <!--<span></span>-->
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="dropdown">
-            <ul class="nav navbar-nav center-me">
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link " href="#section1">WELCOME</a>
-                    <!-- <span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#section2">MISSION STATEMENT</a>
-                    <!--<span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#section3">AT A GLANCE</a>
-                    <!--<span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#section4">SERVICES</a>
-                    <!--<span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#section5">GALLERY</a>
-                    <!--<span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#section6">CONTACT</a>
-                    <!--<span></span>-->
-                </li>
-                <li>
-                    <a class="nav-link-colors link-white-underline white-link" href="#contact"><i class="fa fa-phone"></i>561-555-5555</a>
-                    <!--<span></span>-->
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
     <div id="overlay-dark-mobile"></div>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -495,21 +494,23 @@
                 $(leavingSection).find(".animation").removeClass('animated fadeInLeft');
 
                 $(leavingSection).find(".animation").addClass('animated fadeOutLeft');
+                if ($(window).width() > 992) {
+                    if (nextIndex === 1 && direction === 'up') {
+                        $('#mainNav').removeClass('nav-custom-dynamic-on-scroll');
+                        $('#mainNav').addClass('nav-custom-dynamic');
+                        $('.nav-link-colors').removeClass('link-dark-underline dark-link');
+                        $('.nav-link-colors').addClass('link-white-underline white-link');
+                    }
 
-                if (nextIndex === 1 && direction === 'up') {
-                    $('#mainNav').removeClass('nav-custom-dynamic-on-scroll');
-                    $('#mainNav').addClass('nav-custom-dynamic');
-                    $('.nav-link-colors').removeClass('link-dark-underline dark-link');
-                    $('.nav-link-colors').addClass('link-white-underline white-link');
+                    if (index === 1 && direction === 'down') {
+                        $('#mainNav').removeClass('nav-custom-dynamic');
+                        $('#mainNav').addClass('nav-custom-dynamic-on-scroll');
+                        $('.nav-link-colors').removeClass('link-white-underline white-link');
+                        $('.nav-link-colors').addClass('link-dark-underline dark-link');
+
+                    }
                 }
 
-                if (index === 1 && direction === 'down') {
-                    $('#mainNav').removeClass('nav-custom-dynamic');
-                    $('#mainNav').addClass('nav-custom-dynamic-on-scroll');
-                    $('.nav-link-colors').removeClass('link-white-underline white-link');
-                    $('.nav-link-colors').addClass('link-dark-underline dark-link');
-
-                }
 
 
 
