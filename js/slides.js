@@ -44,3 +44,21 @@ $(".slides2").slick({
             }
         }]
     });
+
+$(".slides3").slick({
+        useTransform: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: true,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        dots: true,
+        draggable: true,
+        vertical: false,
+        cssEase: 'ease-out',
+        speed: 750,
+        
+    });
