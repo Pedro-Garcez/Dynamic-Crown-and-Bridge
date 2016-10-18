@@ -313,16 +313,16 @@
                                 <div class="gallery hidden-xs hidden-sm">
                                     <div class="text-center">
                                         <div class="col-md-3 ">
-                                            <a href="img/case1showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 1" data-lightbox="Dental Prosthetics"><img src="img/case1showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case1showcase.jpg" class="hvr-bob" data-title="Two-unit Bridge 1" data-lightbox="Dental Prosthetics"><img src="img/case1showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-md-3 ">
-                                            <a href="img/case2showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 2" data-lightbox="Dental Prosthetics"><img src="img/case2showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case2showcase.jpg" class="hvr-bob" data-title="Two-unit Bridge 2" data-lightbox="Dental Prosthetics"><img src="img/case2showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-md-3">
-                                            <a href="img/case3showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 3" data-lightbox="Dental Prosthetics"><img src="img/case3showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case3showcase.jpg" class="hvr-bob" data-title="Two-unit Bridge 3" data-lightbox="Dental Prosthetics"><img src="img/case3showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-md-3">
-                                            <a href="img/case4showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 4" data-lightbox="Dental Prosthetics"><img src="img/case4showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case4showcase.jpg" class="hvr-bob" data-title="Two-unit Bridge 4" data-lightbox="Dental Prosthetics"><img src="img/case4showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -332,16 +332,16 @@
                                 <div class="text-center">
                                     <div class="gallery-mobile slides3">
                                         <div class="col-xs-12">
-                                            <a href="img/case1showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 5" data-lightbox="Mobile"><img src="img/case1showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case1showcase.jpg" class="" data-title="Two-unit Bridge 5" data-lightbox="Mobile"><img src="img/case1showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-xs-12">
-                                            <a href="img/case2showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 6" data-lightbox="Mobile"><img src="img/case2showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case2showcase.jpg" class="" data-title="Two-unit Bridge 6" data-lightbox="Mobile"><img src="img/case2showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-xs-12">
-                                            <a href="img/case3showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 7" data-lightbox="Mobile"><img src="img/case3showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case3showcase.jpg" class="" data-title="Two-unit Bridge 7" data-lightbox="Mobile"><img src="img/case3showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                         <div class="col-xs-12">
-                                            <a href="img/case4showcase.jpg" class="hvr-pulse-grow" data-title="Two-unit Bridge 8" data-lightbox="Mobile"><img src="img/case4showcase.jpg" width="200px" class="img-thumbnail" /></a>
+                                            <a href="img/case4showcase.jpg" class="" data-title="Two-unit Bridge 8" data-lightbox="Mobile"><img src="img/case4showcase.jpg" width="200px" class="img-thumbnail" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -375,15 +375,18 @@
                         </div>
                         <div class="col-md-12">
                             <h3>Contact Form</h3>
-                            <form action="" method="">
+                            <form data-toggle="validator" action="" method="">
                                 <div class="form-group">
-                                    <input type="name" class="form-control" id="name" placeholder="Name" />
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name" required />
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Please enter a valid email address." required />
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="phone" class="form-control" id="phone" placeholder="Phone" />
+                                    <input type="text" pattern= "[0-9]{10}" class="form-control" id="phone" placeholder="Phone # (Optional)" data-error="Please enter a valid phone numberm or leave blank." />
+                                    <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control" rows="3" placeholder="Type your message here."></textarea>
@@ -497,15 +500,7 @@
                     <div class="col-xs-12">
                         <ul class="list-inline text-center">
                             <li>
-                                <a class="hvr-pulse-shrink" href="">Dynamic Crown & Bridge</a>
-                                <!-- <span></span>-->
-                            </li>
-                            <li>
-                                |
-                                <!-- <span></span>-->
-                            </li>
-                            <li>
-                                <a class="hvr-pulse-shrink" href="">Privacy Policy</a>
+                                <a class="hvr-bob" href="">Privacy Policy</a>
                                 <!--<span></span>-->
                             </li>
                             <li>
@@ -513,7 +508,15 @@
                                 <!-- <span></span>-->
                             </li>
                             <li>
-                                <a class="hvr-pulse-shrink" href="">Copyright Dynamic Crown and Bridge 2016 All Rights Reserved</a>
+                                <a class="hvr-bob" href="">Copyright Dynamic Crown and Bridge 2016 All Rights Reserved</a>
+                                <!--<span></span>-->
+                            </li>
+                            <li>
+                                |
+                                <!-- <span></span>-->
+                            </li>
+                            <li>
+                                <a class="hvr-bob" href="http://facebook.com/garcezpedro">Web Development by Pedro Garcez</a>
                                 <!--<span></span>-->
                             </li>
                         </ul>
@@ -537,9 +540,15 @@
     <script type="text/javascript" src="js/slides.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/lightbox-settings.js"></script>
+
+
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/validator.min.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    
+
     <script>
     (function(b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;

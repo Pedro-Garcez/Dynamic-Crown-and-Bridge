@@ -74,7 +74,7 @@ a:focus {
 }
 
 li {
-    color: #fdfdfd;
+    color: inherit;
 }
 
 
@@ -158,6 +158,7 @@ li {
 .white-link:focus {
     color: #f9f9f9!important;
 }
+
 
 .dark-link,
 .dark-link:focus {
@@ -557,7 +558,7 @@ i.fa.fa-phone {
 .divider-white {
     border: solid 2px;
     display: block;
-    width: 6.75vw;
+    width: 6vw;
     margin: 2% auto;
     border-color: rgba(253, 253, 253, 1);
 }
@@ -794,11 +795,10 @@ i.fa.fa-phone {
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     margin-top: 20px;
+    color: #fdfdfd;
 }
 
-.accordion .link p:active {
-    background: rgba(26, 129, 221, 1);
-}
+
 
 .accordion .link p {
     margin-top: 0;
@@ -825,9 +825,11 @@ i.fa.fa-phone {
     transition: all 0.4s ease;
 }
 
-.accordion li:last-child .link {
-    border-bottom: 0;
+.accordion .link:hover {
+    border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
+
+
 
 .accordion li i {
     position: absolute;
@@ -892,6 +894,10 @@ i.fa.fa-phone {
     cursor: default;
     font-weight: 300;
     font-size: 1.3em;
+}
+
+.slick-slide img {
+    margin: auto;
 }
 
 #recent-work {
@@ -985,6 +991,8 @@ textarea {
     margin-right: 20px!important;
     color: rgba(26, 129, 221, 1);
 }
+
+
 
 #footer {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a81dd+41,55b5f3+100 */
