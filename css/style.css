@@ -502,8 +502,28 @@ i.fa.fa-phone {
     animation: bounce 2s infinite;
 }
 
+
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: #fdfdfd;
+}
+
 .slick-slide:focus {
     outline: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 6vw;
+}
+
+.slick-prev:before {
+    content: "\f053";
+    font-family: 'FontAwesome';
+}
+
+.slick-next:before {
+    content: "\f054";
+    font-family: 'FontAwesome';
 }
 
 .slick-next {
@@ -538,8 +558,8 @@ i.fa.fa-phone {
 .divider-white {
     border: solid 2px;
     display: block;
-    width: 7vw;
-    margin: 2% auto;
+    width: 6.75vw;
+    margin: 2.25% auto;
     border-color: rgba(253, 253, 253, 1);
 }
 
@@ -907,6 +927,10 @@ i.fa.fa-phone {
 
 /* Contact Section */
 
+#contact-info-mobile {
+    padding: 5%;
+}
+
 textarea {
     resize: none;
 }
@@ -921,14 +945,14 @@ textarea {
     font-size: 1.4em;
 }
 
-#contact a,
+.contact a,
 #footer li a {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-#contact a:hover {
+.contact a:hover {
     text-decoration: none;
     margin-left: 5px;
 }
@@ -938,26 +962,29 @@ textarea {
     padding: 0;
 }
 
-#contact-icon-wrapper .fa {
+#contact-mobile .col-xs-12 {
+    height: 100%;
+    padding: 0;
+    left: 0;
+}
+
+.contact-icon-wrapper .fa {
     float: left;
 }
 
-#contact-icon-wrapper {
+.contact-icon-wrapper {
     margin-top: 50px;
 }
 
-#contact-icon-wrapper p {
-    font-size: 1.5em;
-}
 
-#contact .light-section p {
+.contact .light-section p {
     float: left;
     margin-bottom: 25px;
 }
 
-#contact i {
+.contact i {
     font-size: 1.7em;
-    margin-right: 20px;
+    margin-right: 20px!important;
     color: rgba(26, 129, 221, 1);
 }
 
@@ -968,7 +995,7 @@ textarea {
     -webkit-animation: Background 18s ease infinite;
     -moz-animation: Background 18s ease infinite;
     animation: Background 18s ease infinite;
-    padding: 30px 150px 30px 150px;
+    padding: 2.5% 5%;
 }
 
 #footer li {
@@ -1007,6 +1034,10 @@ textarea {
 }
 
 @media (min-width: 992px) {
+    .contact-icon-wrapper p {
+    font-size: 1.5em;
+}
+
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -1041,6 +1072,11 @@ textarea {
 }
 
 @media (max-width: 767px) {
+    .arrow {
+        margin-left: -10px;
+        width: 30px;
+        height: 30px;
+    }
     .accordion li i.fa-chevron-down {
         font-size: 2.5vw;
     }
@@ -1080,8 +1116,8 @@ textarea {
         display: none;
     }
     p {
-        font-size: 4.3vw;
-        line-height: 4.9vw;
+        font-size: 4.4vw;
+        line-height: 5vw;
         font-weight: 300;
     }
     .accordion .link p,
@@ -1130,6 +1166,9 @@ textarea {
         text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
         0 1.15px 0 rgba(10, 27, 79, 1);
     }
+    .img-thumbnail {
+        width: 400px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -1146,7 +1185,7 @@ textarea {
     .img-thumbnail {
         width: 175px;
     }
-    #contact-icon-wrapper p {
+    .contact-icon-wrapper p {
         font-size: 1.14em;
     }
     h2 {

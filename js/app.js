@@ -3,7 +3,7 @@
         $('#overlay-dark-mobile').toggleClass('overlay-dark-mobile-active');
 
     });
-    $('#bs-example-navbar-collapse-1 ul li a').click(function() {
+    $('#dropdown ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
     
@@ -14,6 +14,7 @@
             loopBottom: true,
             fitToSection: true,
             verticalCentered: true,
+            normalScrollElements: '#gmap_canvas_2, #gmap_canvas',
             slideSelector: '.fullpageslide',
             navigationTooltips: ['Welcome', 'Mission', 'At a Glance', 'Services', 'Gallery', 'Contact Us'],
             navigation: true,

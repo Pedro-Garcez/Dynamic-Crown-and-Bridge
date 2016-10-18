@@ -121,7 +121,7 @@
                         <div class="animation-wrapper animation zero-opacity">
                             <h2>At a glance.</h2>
                             <div class="divider-white"></div>
-                            <p>Dynamic Crown and Bridge brings commitment and passion to every case. If you want consistent, reliable, and timely service from your dental laboratory - choose Dynamic Crown and Bridge today!</p>
+                            <p>If you want consistent, reliable, and timely service from your dental laboratory - then Dynamic Crown and Bridge is the perfect fit for your dental practice.</p>
                         </div>
                     </div>
                     <div id="features-wrapper" class="hidden-xs hidden-sm">
@@ -161,7 +161,7 @@
                     <!--MOBILE FEATURES SECTION-->
                     <div id="features-wrapper" class="hidden-md hidden-lg">
                         <div class="row">
-                            <div id="feature-slider" class="slides2">
+                            <div id="feature-slider" class="slides3">
                                 <div class="col-xs-12 text-center slide">
                                     <img src="img/feature-icons-05.png">
                                     <h4>Precision fit</h4>
@@ -294,7 +294,10 @@
                                     </ul>
                                 </li>
                             </ul>
+                        
                         </div>
+                        <button id="learn-more" type="button" class="btn btn-default hvr-bounce-to-right">LEARN MORE</button>
+
                     </div>
                 </div>
             </div>
@@ -353,12 +356,12 @@
             <div class="arrow bounce scroll-hero"></div>
         </div>
         <div data-anchor="section6" class="section">
-            <div id="contact" class="full-height-page container-fluid hidden-xs hidden-sm">
+            <div id="contact" class="contact full-height-page container-fluid hidden-xs hidden-sm">
                 <div class="vcenter col-md-5 light-section">
                     <div class="animation-wrapper animation">
                         <h2>Get in touch.</h2>
-                        <p class="">Feel free to call or email us, or simply fill out the form below to get in touch.</p>
-                        <div id="contact-icon-wrapper">
+                        <p class="">Feel free to call or email us to get in touch. </p>
+                        <div id="" class="contact-icon-wrapper">
                             <div class="col-md-12">
                                 <i class="fa fa-phone"></i>
                                 <p>561-945-1901</p>
@@ -397,9 +400,9 @@
                 <div class="col-md-7">
                     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
                     <div style="overflow:hidden;height:100%;width:100%;">
-                        <div id="gmap_canvas" style="height:100%;width:100%;">
+                        <div id="gmap_canvas_2" style="height:100%;width:100%;">
                             <style>
-                            #gmap_canvas img {
+                            #gmap_canvas_2 img {
                                 max-width: none!important;
                                 background: none!important
                             }
@@ -412,7 +415,7 @@
                             center: new google.maps.LatLng(26.6980427, -80.0867154),
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         };
-                        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                        map = new google.maps.Map(document.getElementById("gmap_canvas_2"), myOptions);
                         marker = new google.maps.Marker({
                             map: map,
                             position: new google.maps.LatLng(26.6980427, -80.0867154)
@@ -429,7 +432,69 @@
                     </script>
                 </div>
             </div>
+            <!--MOBILE CONTACT SECTION START-->
+            <div id="contact-mobile" class="contact full-height-page container-fluid hidden-md hidden-lg">
+                <div id="contact-info-mobile" class="row">
+                    <div class="col-md-12 light-section">
+                        <div class="animation-wrapper animation">
+                            <h2>Get in touch.</h2>
+                            <p class="">Feel free to call or email us, or simply fill out the form below to get in touch.</p>
+                            <div id="" class="contact-icon-wrapper">
+                                <div class="col-xs-12">
+                                    <i class="fa fa-phone"></i>
+                                    <p>561-945-1901</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <i class="fa fa-map-marker"></i>
+                                    <p>1470 North Congress Ave Suite 116</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <i class="fa fa-envelope"></i>
+                                    <p><a href="mailto:info@dynamiccrownandbridge.com">info@dynamiccrownandbridge.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                        <div style="width: 100%; height: 100%; ">
+                            
+                            <div style="overflow:hidden;height:100%;width:100%;">
+                                <div id="gmap_canvas" style="height:100%;width:100%;">
+                                    <style>
+                                    #gmap_canvas img {
+                                        max-width: none!important;
+                                        background: none!important
+                                    }
+                                    </style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">The Circle</a></div>
+                            </div>
+                            <script type="text/javascript">
+                            function init_map() {
+                                var myOptions = {
+                                    zoom: 14,
+                                    center: new google.maps.LatLng(26.6980427, -80.0867154),
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+                                map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                                marker = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(26.6980427, -80.0867154)
+                                });
+                                infowindow = new google.maps.InfoWindow({
+                                    content: "<b>Dynamic Crown &amp; Bridge</b><br/>1470 North Congress Ave Suite 116 <br/>33409 West Palm Beach Florida"
+                                });
+                                google.maps.event.addListener(marker, "click", function() {
+                                    infowindow.open(map, marker);
+                                });
+                                infowindow.open(map, marker);
+                            }
+                            google.maps.event.addDomListener(window, 'load', init_map);
+                            </script>
+                        </div>
+                
+            </div>
         </div>
+        <!--MOBILE CONTACT SECTION END-->
         <div data-anchor="section7" id="footer" class="white-link section fp-auto-height">
             <div class="container-fluid">
                 <div class="row">
@@ -472,15 +537,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script type="text/javascript" src="https://use.fontawesome.com/3ca74ba5c3.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/jquery.onepage-scroll-settings.js"></script>-->
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="js/FadeOnScroll.js"></script>-->
     <script type="text/javascript" src="js/slides.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/agency.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
