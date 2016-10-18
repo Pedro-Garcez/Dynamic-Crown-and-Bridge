@@ -70,14 +70,11 @@ a,
 a:active,
 a:focus {
     text-decoration: none;
+    color: inherit;
 }
 
 li {
     color: #fdfdfd;
-}
-
-a {
-    color: inherit;
 }
 
 
@@ -157,7 +154,7 @@ a {
 }
 
 .white-link,
-.navbar-default .navbar-nav>li>a:focus {
+.white-link:focus {
     color: #f9f9f9!important;
 }
 
@@ -502,8 +499,8 @@ i.fa.fa-phone {
     animation: bounce 2s infinite;
 }
 
-
-.slick-dots li button:before, .slick-dots li.slick-active button:before {
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
     color: #fdfdfd;
 }
 
@@ -559,7 +556,7 @@ i.fa.fa-phone {
     border: solid 2px;
     display: block;
     width: 6.75vw;
-    margin: 2.25% auto;
+    margin: 2% auto;
     border-color: rgba(253, 253, 253, 1);
 }
 
@@ -976,7 +973,6 @@ textarea {
     margin-top: 50px;
 }
 
-
 .contact .light-section p {
     float: left;
     margin-bottom: 25px;
@@ -1035,23 +1031,30 @@ textarea {
 
 @media (min-width: 992px) {
     .contact-icon-wrapper p {
-    font-size: 1.5em;
-}
-
+        font-size: 1.5em;
+    }
     .navbar .navbar-collapse {
         text-align: center;
     }
     .nav-custom-dynamic {
-        /*background: rgba(0,0,0,0.3);*/
         padding-left: 30px;
         padding-right: 30px;
         background: none;
-        /*background: rgba(255, 255, 255, 0.7);*/
+    }
+    #mainMenu>li .active {
+         -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
     }
     .link-dark-underline:after {
         content: '';
         position: absolute;
-        bottom: 19px;
+        bottom: 18px;
         left: 0;
         width: 0;
         border-bottom: 2px solid rgba(26, 129, 221, 1);
@@ -1060,7 +1063,7 @@ textarea {
     .link-white-underline:after {
         content: '';
         position: absolute;
-        bottom: 19px;
+        bottom: 18px;
         left: 0;
         width: 0;
         border-bottom: 2px solid #f9f9f9;

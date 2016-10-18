@@ -18,6 +18,8 @@
             slideSelector: '.fullpageslide',
             navigationTooltips: ['Welcome', 'Mission', 'At a Glance', 'Services', 'Gallery', 'Contact Us'],
             navigation: true,
+            menu: '#mainMenu',
+            anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
 
             afterLoad: function(anchorLink, index) {
                 $(this).find(".animation").removeClass('animated fadeOutLeft');
