@@ -3,7 +3,7 @@
         $('#overlay-dark-mobile').toggleClass('overlay-dark-mobile-active');
 
     });
-    $('#dropdown ul li a').click(function() {
+    $('#dropdown ul li p').click(function() {
         $('.navbar-toggle:visible').click();
     });
     
@@ -48,12 +48,30 @@
                     }
                 }
 
-
+           
 
 
             }
 
 
+        });
+        $('#welcome_scroll').click(function() {
+            $.fn.fullpage.moveTo(1);
+        });
+        $('#mission_scroll').click(function() {
+            $.fn.fullpage.moveTo(2);
+        });
+        $('#glance_scroll').click(function() {
+            $.fn.fullpage.moveTo(3);
+        });
+        $('#services_scroll').click(function() {
+            $.fn.fullpage.moveTo(4);
+        });
+        $('#gallery_scroll').click(function() {
+            $.fn.fullpage.moveTo(5);
+        });
+        $('#contact_scroll').click(function() {
+            $.fn.fullpage.moveTo(6);
         });
         $('.scroll-hero, #learn-more').click(function() {
             $.fn.fullpage.moveSectionDown();
