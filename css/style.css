@@ -647,6 +647,10 @@ p i.fa.fa-phone {
     font-weight: inherit;
 }
 
+.p-toggler {
+    display: none;
+} 
+
 #feature_line_1 {
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
@@ -1160,7 +1164,8 @@ textarea {
     }
     h4 {
         font-size: 6vw;
-        line-height: 7vw font-weight: 300;
+        line-height: 7vw; 
+        font-weight: 300;
     }
     .divider-white {
         border: solid 1px;
@@ -1260,6 +1265,7 @@ textarea {
         height: 30px;
     }
 }
+
 
 @media (max-width: 992px) {
     .hero-img-2 {

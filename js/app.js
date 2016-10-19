@@ -81,6 +81,10 @@ $(document).ready(function() {
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
-  
+    $(".toggle_p").hover(function() {
+        $(this).parent().find(".p-toggler").slideToggle(250);
+        console.log('works dog');
+    });
+
 
 });
