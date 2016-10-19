@@ -392,9 +392,9 @@ p i.fa.fa-phone {
     -moz-animation: fade 40s infinite;
     -o-animation: fade 40s infinite;
     animation: fade 40s infinite;
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 7s;
     /* Chrome, Safari, Opera */
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 
 .hero-img-2 {
@@ -413,9 +413,9 @@ p i.fa.fa-phone {
     -moz-animation: fade2 40s infinite;
     -o-animation: fade2 40s infinite;
     animation: fade2 40s infinite;
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 7s;
     /* Chrome, Safari, Opera */
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 
 .hero-img-3 {
@@ -434,9 +434,9 @@ p i.fa.fa-phone {
     -moz-animation: fade3 40s infinite;
     -o-animation: fade3 40s infinite;
     animation: fade3 40s infinite;
-    -webkit-animation-delay: 10s;
+    -webkit-animation-delay: 7s;
     /* Chrome, Safari, Opera */
-    animation-delay: 10s;
+    animation-delay: 7s;
 }
 
 .vcenter {
@@ -682,9 +682,11 @@ p i.fa.fa-phone {
     z-index: -5;
 }
 
-#feature_line_1 .col-md-4 p, #feature_line_2 .col-md-4 p {
+#feature_line_1 .col-md-4 p,
+#feature_line_2 .col-md-4 p {
     position: absolute;
-    padding: 0;
+    padding: 0 3%;
+    text-align: center;
 }
 
 #features-wrapper .col-md-4 {
@@ -956,7 +958,7 @@ p i.fa.fa-phone {
 /* Contact Section */
 
 #contact-info-mobile {
-    padding: 13% 5% 5%;
+    padding: 10% 5% 5%;
 }
 
 textarea {
@@ -1062,9 +1064,17 @@ textarea {
         padding: 7.5px 7.5px;
         font-size: 3vw!important;
     }
+    
 }
 
 @media (min-width: 992px) {
+    #footer li {
+        font-size: 1.1em;
+    }
+    #feature_line_1 .col-md-4 p,
+    #feature_line_2 .col-md-4 p {
+        padding: 0 10%;
+    }
     .navbar {
         min-height: 0!important;
         margin-bottom: 0!important;
@@ -1130,6 +1140,9 @@ textarea {
         width: 30px;
         height: 30px;
     }
+    #footer li {
+        font-size: .85em;
+    }
     .accordion li i.fa-chevron-down {
         font-size: 2.5vw;
     }
@@ -1188,6 +1201,9 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-toggle .fa-bars {
+        font-size: 2em;
+    }
     .navbar-default .navbar-nav>li>p {
         margin-right: 12px;
         margin-left: 12px;
@@ -1214,6 +1230,21 @@ textarea {
     .btn-default {
         font-size: 1.1em;
         padding: 2.5% 5%;
+    }
+    .hovicon {
+        width: 90px!important;
+        height: 90px!important;
+        line-height: 80px!important;
+    }
+    #features-wrapper img {
+        width: 80px;
+    }
+    #features h4 {
+        line-height: 1em;
+        margin-bottom: 5px;
+    }
+    #feature_line_2 {
+        margin-top: 3%;
     }
 }
 

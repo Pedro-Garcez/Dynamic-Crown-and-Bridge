@@ -3,9 +3,9 @@ $('.navbar-toggle').click(function() {
 
 });
 
- $('#dropdown ul li p').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
+$('#dropdown ul li p').click(function() {
+    $('.navbar-toggle:visible').click();
+});
 
 $(document).ready(function() {
 
@@ -85,9 +85,9 @@ $(document).ready(function() {
         $('.accordion .link').unbind('mouseout');
     });
     $(".toggle_p").hover(function() {
-        $(this).parent().find(".p-toggler").slideToggle(300);
+        $(this).parent().find(".p-toggler").slideToggle(200);
         console.log('works dog');
     });
-
+    $('.fa-chevron-down').unbind();
 
 });
