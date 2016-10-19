@@ -785,17 +785,6 @@ p i.fa.fa-phone {
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
 
-.porcelain-restoration p:hover ~ i.fa-chevron-down,
-.porcelain-restoration p:hover,
-.porcelain-restoration i:hover ~ p,
-.porcelain-to-metal p:hover ~ i.fa-chevron-down,
-.porcelain-to-metal p:hover,
-.full-cast-crowns p:hover ~ i.fa-chevron-down,
-.full-cast-crowns p:hover,
-.crown-under-partial p:hover ~ i.fa-chevron-down,
-.crown-under-partial p:hover {
-    color: #fdfdfd;
-}
 
 .full-cast-crowns:hover,
 .crown-under-partial:hover,
@@ -825,6 +814,8 @@ p i.fa.fa-phone {
     border-left: 1px solid #ddd;
     margin-top: 20px;
     color: #fdfdfd;
+   
+
 }
 
 .accordion .link p {
@@ -833,9 +824,8 @@ p i.fa.fa-phone {
     padding-left: 15px;
     font-weight: 400;
     padding: 15px 15px 15px 15px;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    
+    color: inherit;
 }
 
 .accordion .link {
@@ -847,13 +837,16 @@ p i.fa.fa-phone {
     font-weight: 500;
     border-bottom: 1px solid #CCC;
     position: relative;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+     -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    
 }
 
 .accordion .link:hover {
-    border-bottom: 1px solid rgba(40, 147, 241, 1);
+   border-bottom: 1px solid rgba(40, 147, 241, 1);
+    color: #fdfdfd!important;
+    background: rgba(26, 129, 221, 1);
 }
 
 .accordion li i {
@@ -862,23 +855,24 @@ p i.fa.fa-phone {
     left: 12px;
     font-size: 18px;
     color: #595959;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+
 }
 
 .accordion li i.fa-chevron-down {
     right: 12px;
     left: auto;
     font-size: 16px;
+        color: inherit;
+        
+    
 }
 
 .accordion li.open .link {
-    color: rgba(26, 129, 221, 1);
+    
 }
 
 .accordion li.open i {
-    color: rgba(26, 129, 221, 1);
+        color: inherit;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -886,6 +880,8 @@ p i.fa.fa-phone {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+        color: inherit;
+        
 }
 
 .accordion li.default .submenu {
@@ -1240,7 +1236,7 @@ textarea {
         width: 80px;
     }
     #features h4 {
-        line-height: 1em;
+        line-height: 1.4em;
         margin-bottom: 5px;
     }
     #feature_line_2 {
