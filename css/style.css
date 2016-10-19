@@ -192,6 +192,11 @@ li {
     border: none;
 }
 
+.navbar {
+    min-height: 0!important;
+    margin-bottom: 0!important;
+}
+
 #fp-nav ul li .fp-tooltip.right {
     top: -2.5px;
     text-transform: uppercase;
@@ -251,7 +256,7 @@ li {
 
 #hero-slide-container {}
 
-i.fa.fa-phone {
+p i.fa.fa-phone {
     margin-right: 3px;
 }
 
@@ -358,7 +363,7 @@ i.fa.fa-phone {
 }
 
 .hero-img-1 {
-    background: url(../img/SmilingWoman.jpg);
+    background: url(../img/dynamiccrownandbridge-hero-2.jpg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -376,10 +381,11 @@ i.fa.fa-phone {
     -webkit-animation-delay: 10s;
     /* Chrome, Safari, Opera */
     animation-delay: 10s;
+    
 }
 
 .hero-img-2 {
-    background: url(../img/test6.jpg);
+    background: url(../img/dynamiccrownandbridge-hero-1.jpg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -400,13 +406,8 @@ i.fa.fa-phone {
 }
 
 .hero-img-3 {
-    background: url(../img/test5.jpg);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+    background: url(../img/dynamiccrownandbridge-hero-3.jpg);
+    
     height: 100%;
     width: 100%;
     position: absolute;
@@ -429,10 +430,12 @@ i.fa.fa-phone {
 .vcenter {
     position: relative;
     top: calc(51%);
-    -webkit-transform: translateY(-51%);
-    -ms-transform: translateY(-51%);
-    transform: translateY(-51%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
+
 
 .arrows {
     width: 70px;
@@ -613,7 +616,7 @@ i.fa.fa-phone {
 }
 
 .mission-bg {
-    background: url(../img/test2.jpg);
+    background: url(../img/dynamiccrownandbridge-mission-statement.jpg);
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -649,7 +652,7 @@ i.fa.fa-phone {
 }
 
 .features-bg-img {
-    background: url(../img/test4.jpg);
+    background: url(../img/dynamiccrownandbridge-at-a-glance.jpg);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -675,7 +678,7 @@ i.fa.fa-phone {
 
 .overlay-dark {
     position: absolute;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     background-size: 100% 100%;
     height: 100%;
     width: 100%;
@@ -734,7 +737,7 @@ i.fa.fa-phone {
 /* Services stuff */
 
 .services-bg {
-    background: url(../img/dental-tools.jpg);
+    background: url(../img/dynamiccrownandbridge-services.jpg);
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -933,7 +936,7 @@ i.fa.fa-phone {
 /* Contact Section */
 
 #contact-info-mobile {
-    padding: 5%;
+    padding: 13% 5% 5%;
 }
 
 textarea {
@@ -988,8 +991,12 @@ textarea {
 
 .contact i {
     font-size: 1.7em;
-    margin-right: 20px!important;
+    margin-right: 20px;
     color: rgba(26, 129, 221, 1);
+}
+
+#contact-info-mobile i.fa-map-marker {
+    margin-right: 26px;
 }
 
 
@@ -1041,7 +1048,7 @@ textarea {
 
 @media (min-width: 992px) {
     .navbar-nav>li>p {
-        padding: 15px 0;
+            padding: 15px 0 8px;
         margin-bottom: 0;
     }
     .contact-icon-wrapper p {
@@ -1074,30 +1081,21 @@ textarea {
     .link-dark-underline:after {
         content: '';
         position: absolute;
-        bottom: 18px;
+        bottom: 10px;
         left: 0;
         width: 0;
         border-bottom: 2px solid rgba(26, 129, 221, 1);
         transition: 0.4s;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        
     }
     .link-white-underline:after {
         content: '';
         position: absolute;
-        bottom: 18px;
+        bottom: 10px;
         left: 0;
         width: 0;
         border-bottom: 2px solid #f9f9f9;
         transition: 0.4s;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
     }
     .navbar-default :hover:after {
         width: 100%;
@@ -1126,23 +1124,20 @@ textarea {
     .jumbotron h1 {
         font-size: 3em;
         margin-bottom: 20px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 2px 0 rgba(35, 35, 35, 1);
+        
         padding: 0 3%;
     }
     .jumbotron h2 {
         font-size: 1.35em;
         margin-bottom: 30px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(35, 35, 35, 1);
+        
         padding-left: .5%;
         padding-right: .5%
     }
     .jumbotron h3 {
         font-size: 1.2em;
         margin-bottom: 30px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(35, 35, 35, 1);
+        
         padding-left: 3%;
         padding-right: 3%
     }
@@ -1184,21 +1179,18 @@ textarea {
     .jumbotron h1 {
         font-size: 4.8em;
         margin-bottom: 45px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 2px 0 rgba(10, 27, 79, 1);
+        
         padding: 0 14%;
     }
     .jumbotron h2 {
         font-size: 2em;
         margin-bottom: 40px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
+       
     }
     .jumbotron h3 {
         font-size: 1.5em;
         margin-bottom: 40px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
+      
     }
     .img-thumbnail {
         width: 400px;
@@ -1213,8 +1205,16 @@ textarea {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1440px) {
+    .vcenter {
+    position: relative;
+    top: calc(52%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
     .navbar-default .navbar-nav>li>p {
         letter-spacing: 0;
+        font-size: 1em;
     }
     .img-thumbnail {
         width: 175px;
@@ -1242,22 +1242,19 @@ textarea {
         font-size: 1em;
     }
     .jumbotron h1 {
-        font-size: 5.2em;
+        font-size: 5.6em;
         margin-bottom: 55px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 2px 0 rgba(10, 27, 79, 1);
+        
     }
     .jumbotron h2 {
-        font-size: 2.4em;
+        font-size: 2.8em;
         margin-bottom: 50px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
+        
     }
     .jumbotron h3 {
-        font-size: 1.9em;
+        font-size: 2.3em;
         margin-bottom: 50px;
-        text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-        0 1.15px 0 rgba(10, 27, 79, 1);
+       
     }
 }
 
