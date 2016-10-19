@@ -374,10 +374,10 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade 50s infinite;
-    -moz-animation: fade 50s infinite;
-    -o-animation: fade 50s infinite;
-    animation: fade 50s infinite;
+    -webkit-animation: fade 40s infinite;
+    -moz-animation: fade 40s infinite;
+    -o-animation: fade 40s infinite;
+    animation: fade 40s infinite;
     -webkit-animation-delay: 10s;
     /* Chrome, Safari, Opera */
     animation-delay: 10s;
@@ -396,10 +396,10 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade2 50s infinite;
-    -moz-animation: fade2 50s infinite;
-    -o-animation: fade2 50s infinite;
-    animation: fade2 50s infinite;
+    -webkit-animation: fade2 40s infinite;
+    -moz-animation: fade2 40s infinite;
+    -o-animation: fade2 40s infinite;
+    animation: fade2 40s infinite;
     -webkit-animation-delay: 10s;
     /* Chrome, Safari, Opera */
     animation-delay: 10s;
@@ -418,10 +418,10 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade3 50s infinite;
-    -moz-animation: fade3 50s infinite;
-    -o-animation: fade3 50s infinite;
-    animation: fade3 50s infinite;
+    -webkit-animation: fade3 40s infinite;
+    -moz-animation: fade3 40s infinite;
+    -o-animation: fade3 40s infinite;
+    animation: fade3 40s infinite;
     -webkit-animation-delay: 10s;
     /* Chrome, Safari, Opera */
     animation-delay: 10s;
