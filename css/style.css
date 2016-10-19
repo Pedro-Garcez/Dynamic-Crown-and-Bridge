@@ -785,7 +785,6 @@ p i.fa.fa-phone {
     border-bottom: 1px solid rgba(40, 147, 241, 1);
 }
 
-
 .full-cast-crowns:hover,
 .crown-under-partial:hover,
 .porcelain-to-metal:hover {
@@ -814,8 +813,6 @@ p i.fa.fa-phone {
     border-left: 1px solid #ddd;
     margin-top: 20px;
     color: #fdfdfd;
-   
-
 }
 
 .accordion .link p {
@@ -824,7 +821,6 @@ p i.fa.fa-phone {
     padding-left: 15px;
     font-weight: 400;
     padding: 15px 15px 15px 15px;
-    
     color: inherit;
 }
 
@@ -837,14 +833,13 @@ p i.fa.fa-phone {
     font-weight: 500;
     border-bottom: 1px solid #CCC;
     position: relative;
-     -webkit-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-    
 }
 
 .accordion .link:hover {
-   border-bottom: 1px solid rgba(40, 147, 241, 1);
+    border-bottom: 1px solid rgba(40, 147, 241, 1);
     color: #fdfdfd!important;
     background: rgba(26, 129, 221, 1);
 }
@@ -855,24 +850,19 @@ p i.fa.fa-phone {
     left: 12px;
     font-size: 18px;
     color: #595959;
-
 }
 
 .accordion li i.fa-chevron-down {
     right: 12px;
     left: auto;
     font-size: 16px;
-        color: inherit;
-        
-    
+    color: inherit;
 }
 
-.accordion li.open .link {
-    
-}
+.accordion li.open .link {}
 
 .accordion li.open i {
-        color: inherit;
+    color: inherit;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -880,8 +870,7 @@ p i.fa.fa-phone {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
-        color: inherit;
-        
+    color: inherit;
 }
 
 .accordion li.default .submenu {
@@ -1060,10 +1049,24 @@ textarea {
         padding: 7.5px 7.5px;
         font-size: 3vw!important;
     }
-    
 }
 
 @media (min-width: 992px) {
+    .slick-dots {
+       top: 130px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 60px;
+    }
+    .slick-next {
+        right: -50px;
+        height: 60px;
+    }
+    .slick-prev {
+        left: -50px;
+        height: 60px;
+    }
     #footer li {
         font-size: 1.1em;
     }
