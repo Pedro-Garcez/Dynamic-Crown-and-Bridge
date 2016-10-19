@@ -306,7 +306,7 @@ p i.fa.fa-phone {
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-    0 1.5px 0 rgba(35, 35, 35, 1);
+    0 2.25px 0 rgba(35, 35, 35, 1);
     font-weight: 400;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -321,7 +321,7 @@ p i.fa.fa-phone {
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-    0 1.5px 0 rgba(35, 35, 35, 1);
+    0 2.25px 0 rgba(35, 35, 35, 1);
     font-weight: 300;
     /* Chrome, Safari, Opera */
     -webkit-transition: all 0.25s ease;
@@ -654,14 +654,14 @@ p i.fa.fa-phone {
     font-weight: inherit;
 }
 
-#feature1 {
+.feature1 {
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
     -o-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
 
-#feature2 {
+.feature2 {
     -webkit-animation-delay: .2s;
     -moz-animation-delay: .2s;
     -o-animation-delay: .2s;
@@ -684,8 +684,7 @@ p i.fa.fa-phone {
 }
 
 #features img {
-    width: 23%;
-    margin-top: 2em;
+    width: 100px;
 }
 
 #features h2 {
@@ -1113,6 +1112,7 @@ textarea {
 }
 
 @media (max-width: 767px) {
+    
     .arrow {
         margin-left: -10px;
         width: 30px;
@@ -1264,6 +1264,15 @@ textarea {
 }
 
 @media (max-width: 992px) {
+    
+.hero-img-2 {
+    background-position: left center;
+    
+}
+ .hero-img-1 {
+    background-position: right center;
+     
+ }
     .navbar-toggle {
         text-shadow: 1px 1px 3px #000;
     }
@@ -1570,4 +1579,91 @@ textarea {
     100% {
         opacity: 0
     }
+}
+
+/*HOV ICONS*/
+
+
+
+/* Effect 1 */
+ .hovicon.effect-1 {
+    background: rgba(26, 129, 221, 1);
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+
+.hovicon {
+       display: inline-block;
+    font-size: 45px;
+    line-height: 90px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+
+
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hovicon.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+.hovicon.effect-1.sub-b:hover {
+     background-color: rgba(21, 102, 175, 1); 
+    color: #41ab6b;
+}
+.hovicon.effect-1.sub-b:hover i {
+    color: #41ab6b;
+}
+.hovicon.effect-1.sub-b:after {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.hovicon.effect-1.sub-b:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
 }
