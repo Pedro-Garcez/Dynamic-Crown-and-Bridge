@@ -3,6 +3,9 @@ $('.navbar-toggle').click(function() {
 
 });
 
+ $('#dropdown ul li p').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
 
 $(document).ready(function() {
 

@@ -649,7 +649,7 @@ p i.fa.fa-phone {
 
 .p-toggler {
     display: none;
-} 
+}
 
 #feature_line_1 {
     -webkit-animation-delay: 0.1s;
@@ -1109,7 +1109,8 @@ textarea {
         border-bottom: 2px solid #f9f9f9;
         transition: 0.4s;
     }
-    .navbar-default:hover:after {
+    .link-white-underline:hover:after,
+    .link-dark-underline:hover:after {
         width: 100%;
     }
 }
@@ -1164,7 +1165,7 @@ textarea {
     }
     h4 {
         font-size: 6vw;
-        line-height: 7vw; 
+        line-height: 7vw;
         font-weight: 300;
     }
     .divider-white {
@@ -1265,7 +1266,6 @@ textarea {
         height: 30px;
     }
 }
-
 
 @media (max-width: 992px) {
     .hero-img-2 {
