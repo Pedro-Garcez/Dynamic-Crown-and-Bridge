@@ -682,6 +682,15 @@ p i.fa.fa-phone {
     z-index: -5;
 }
 
+#feature_line_1 .col-md-4 p, #feature_line_2 .col-md-4 p {
+    position: absolute;
+    padding: 0;
+}
+
+#features-wrapper .col-md-4 {
+    margin-bottom: 20px;
+}
+
 #features img {
     width: 100px;
 }
