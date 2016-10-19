@@ -77,10 +77,12 @@
                 <div class="vcenter ">
                     <h3 class="display-3 text-center animation zero-opacity">WELCOME TO</h3>
                     <h1 class="display-3 text-center animation zero-opacity">Dynamic Crown & Bridge</h1>
-                    <div class="slides animation zero-opacity">
-                        <h2 class="display-3 text-center">DENTAL LABORATORY</h2>
-                        <h2 class="display-3 text-center">25 YEARS OF EXPERIENCE</h2>
-                        <h2 class="display-3 text-center">WEST PALM BEACH FL</h2>
+                    <div id="example" class="animation zero-opacity ">
+                        <ul class="">
+                            <li class="text-center">DENTAL LABORATORY</li>
+                            <li class="text-center">25 YEARS OF EXPERIENCE</li>
+                            <li class="text-center">WEST PALM BEACH FL</li>
+                        </ul>
                     </div>
                 </div>
                 <p class="blink-text scroll-to-discover  scroll-hero ">SCROLL DOWN</p>
@@ -544,6 +546,13 @@
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/validator.min.js"></script>
+    <script type="text/javascript" src="js/vticker.js"></script>
+
+    <script>
+    $(function() {
+        $('#example').vTicker();
+    });
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(b, o, i, l, e, r) {
