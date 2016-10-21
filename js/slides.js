@@ -36,7 +36,15 @@ $(".slides2").slick({
         draggable: true,
         vertical: false,
         cssEase: 'ease-out',
-        speed: 750
+        speed: 750,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                dots: false
+
+            }
+        }]
        
     });
 
@@ -59,6 +67,7 @@ $(".slides3").slick({
             breakpoint: 992,
             settings: {
                 slidesToShow: 1
+
             }
         }]
         
