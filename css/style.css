@@ -282,7 +282,6 @@ p i.fa.fa-phone {
     margin-top: 0;
     text-shadow: /*0 -1.5px 0 rgba(255,255,255,.5),*/
     0 3px 0 rgba(35, 35, 35, 1);
-   
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
@@ -295,7 +294,7 @@ p i.fa.fa-phone {
     margin-bottom: 60px;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
-     -webkit-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
     -o-animation-delay: 0.1s;
     animation-delay: 0.1s;
@@ -321,7 +320,7 @@ p i.fa.fa-phone {
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
-     -webkit-animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
     -moz-animation-delay: 0.15s;
     -o-animation-delay: 0.15s;
     animation-delay: 0.15s;
@@ -552,10 +551,10 @@ p i.fa.fa-phone {
     left: 55px;
 }
 
-
 .slick-list {
     padding: 10px 0;
 }
+
 .slides {
     -webkit-animation-delay: 0.2s;
     -moz-animation-delay: 0.2s;
@@ -660,6 +659,10 @@ p i.fa.fa-phone {
     display: none;
 }
 
+#features .vcenter {
+    padding: 0 40px;
+}
+
 #feature_line_1 {
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
@@ -694,8 +697,9 @@ p i.fa.fa-phone {
 #feature_line_1 .col-md-4 p,
 #feature_line_2 .col-md-4 p {
     position: absolute;
-    padding: 0 3%;
+    padding: 0;
     text-align: center;
+    left: -4px;
 }
 
 #features-wrapper .col-md-4 {
@@ -1064,7 +1068,7 @@ textarea {
 
 @media (min-width: 992px) {
     .slick-dots {
-       top: 130px;
+        top: 130px;
     }
     .slick-prev:before,
     .slick-next:before {
@@ -1080,10 +1084,6 @@ textarea {
     }
     #footer li {
         font-size: 1.1em;
-    }
-    #feature_line_1 .col-md-4 p,
-    #feature_line_2 .col-md-4 p {
-        padding: 0 10%;
     }
     .navbar {
         min-height: 0!important;
@@ -1254,17 +1254,22 @@ textarea {
         margin-bottom: 5px;
     }
     #feature_line_2 {
-        margin-top: 3%;
+        margin-top: 3.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    #features .vcenter {
+        padding: 10px!important;
     }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1440px) {
-    .vcenter {
-        position: relative;
-        top: calc(52%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+    #features .vcenter {
+        padding: 20px 20px 40px 20px;
+    }
+    #contact .vcenter {
+        padding-top: 40px;
     }
     .navbar-default .navbar-nav>li>p {
         letter-spacing: 0;
