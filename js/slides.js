@@ -26,23 +26,18 @@ $(".slides2").slick({
         useTransform: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        arrows: false,
+        arrows: true,
         fade: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,
         pauseOnFocus: false,
-        dots: false,
+        dots: true,
         draggable: true,
         vertical: false,
         cssEase: 'ease-out',
-        speed: 750,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                dots: false
-            }
-        }]
+        speed: 750
+       
     });
 
 $(".slides3").slick({
@@ -60,5 +55,11 @@ $(".slides3").slick({
         vertical: false,
         cssEase: 'ease-out',
         speed: 750,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
         
     });
