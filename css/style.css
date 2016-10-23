@@ -95,7 +95,7 @@ li {
 }
 
 .navbar-toggle .fa-bars {
-    color: #fdfdfd;
+        color: #1a81dd;
     font-size: 1.4em;
 }
 
@@ -262,7 +262,7 @@ p i.fa.fa-phone {
     -o-animation-delay: 0.1s;
     animation-delay: 0.1s;
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-    0 2.25px 0 rgba(35, 35, 35, 1);
+    0 1px 0 rgba(35, 35, 35, 1);
     font-weight: 400;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -277,7 +277,7 @@ p i.fa.fa-phone {
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
-    0 2.25px 0 rgba(35, 35, 35, 1);
+    0 1px 0 rgba(35, 35, 35, 1);
     font-weight: 300;
     /* Chrome, Safari, Opera */
     -webkit-transition: all 0.25s ease;
@@ -560,8 +560,8 @@ p i.fa.fa-phone {
     margin: 5%;
     -webkit-border-radius: 1%;
     border-radius: 1%;
-    border-right: 4px solid #FFC50D;
-    border-bottom: 4px solid #FF580D;
+    border-right: 2px solid #FFC50D;
+    border-bottom: 2px solid #FF580D;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -715,7 +715,7 @@ p i.fa.fa-phone {
     z-index: 100;
     left: 0;
     visibility: visible!important;
-    opacity: .8!important;
+    opacity: .9!important;
 }
 
 .dark-section {
@@ -920,7 +920,7 @@ p i.fa.fa-phone {
 /* Contact Section */
 
 #contact-info-mobile {
-    padding: 10% 5% 5%;
+    padding: 18% 5% 5%;
 }
 
 textarea {
@@ -944,7 +944,7 @@ textarea {
     transition: all 0.5s ease;
 }
 
-.contact a:hover {
+.contact a:hover, #footer a:hover {
     text-decoration: none;
     margin-left: 5px;
 }
@@ -1011,10 +1011,10 @@ textarea {
 
 @media (max-width: 360px) {
     .slick-next {
-        right: 25px;
+        right: 15px;
     }
     .slick-prev {
-        left: 25px;
+        left: 15px;
     }
     #example li {
         font-size: 1.25em!important;
@@ -1037,11 +1037,11 @@ textarea {
         font-size: 60px;
     }
     .slick-next {
-        right: -50px;
+        right: -45px;
         height: 60px;
     }
     .slick-prev {
-        left: -50px;
+        left: -45px;
         height: 60px;
     }
     #footer li {
@@ -1108,7 +1108,7 @@ textarea {
 
 @media (max-width: 767px) {
     .arrow {
-        margin-left: -10px;
+        margin-left: -14px;
         width: 30px;
         height: 30px;
     }
@@ -1181,7 +1181,7 @@ textarea {
     .jumbotron h1 {
         font-size: 4.8em;
         margin-bottom: 55px;
-        padding: 0 14%;
+        padding: 0 10%;
     }
     #example li {
         font-size: 2em;
@@ -1202,7 +1202,7 @@ textarea {
     }
     .btn-default {
         font-size: 1.1em;
-        padding: 2.5% 5%;
+        padding: 2.2% 4.7%;
     }
     #features-wrapper img {
         width: 80px;
@@ -1229,12 +1229,12 @@ textarea {
         line-height: 80px!important;
     }
     .arrow {
-        margin-left: -10px;
+        margin-left: -14px;
         width: 30px;
         height: 30px;
     }
     .features-vcenter {
-        padding: 20px 20px 40px 20px;
+            padding: 10px 10px 60px 10px;
     }
     #contact .vcenter {
         padding-top: 40px;
@@ -1250,7 +1250,7 @@ textarea {
         font-size: 1.14em;
     }
     h2 {
-        font-size: 3.5em;
+        font-size: 3.3em;
         line-height: 1em;
     }
     h3 {
@@ -1263,7 +1263,7 @@ textarea {
     }
     h4,
     h5 {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
     .submenu li a {
         font-size: 1em;
@@ -1300,9 +1300,7 @@ textarea {
     .hero-img-1 {
         background-position: right center;
     }
-    .navbar-toggle {
-        text-shadow: 1px 1px 3px #000;
-    }
+    
     .navbar-default .navbar-nav>li>p {
         padding-left: 2%;
         line-height: 20px;
@@ -1337,6 +1335,7 @@ textarea {
     }
     .navbar-header {
         float: none;
+       background: rgba(253,253,253, .85);
     }
     .navbar-toggle {
         display: block;
