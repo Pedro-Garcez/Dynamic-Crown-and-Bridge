@@ -1012,11 +1012,9 @@ textarea {
 @media (max-width: 360px) {
     .slick-next {
         right: 25px;
-        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25), 0 3px 7px 0 rgba(0, 0, 0, 0.35);
     }
     .slick-prev {
         left: 25px;
-        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25), 0 3px 7px 0 rgba(0, 0, 0, 0.35);
     }
     #example li {
         font-size: 1.25em!important;
