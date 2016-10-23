@@ -22,15 +22,27 @@ $(document).ready(function() {
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
 
         afterLoad: function(anchorLink, index) {
+            
             $(this).find(".animation").removeClass('animated fadeOutLeft');
             $(this).find(".animation").css("display", "block");
             $(this).find(".animation").addClass('animated fadeInLeft');
+
         },
         onLeave: function(index, nextIndex, direction) {
             var leavingSection = $(this);
             $(leavingSection).find(".animation").removeClass('animated fadeInLeft');
 
             $(leavingSection).find(".animation").addClass('animated fadeOutLeft');
+
+            if ($(window).width() < 992) {
+                if (nextIndex === 6 || nextIndex === 7) {
+                    $('.fa-bars').css('color', "#1a81dd");
+                }
+
+                else {
+                    $('.fa-bars').css('color', "#fdfdfd");
+                }
+            }
             if ($(window).width() > 992) {
                 if (nextIndex === 1 && direction === 'up') {
                     $('#mainNav').removeClass('nav-custom-dynamic-on-scroll');

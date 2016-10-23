@@ -95,9 +95,11 @@ li {
 }
 
 .navbar-toggle .fa-bars {
-        color: #1a81dd;
     font-size: 1.4em;
+    color: #fdfdfd;
 }
+
+
 
 .navbar-default .navbar-toggle {
     background: none;
@@ -920,7 +922,7 @@ p i.fa.fa-phone {
 /* Contact Section */
 
 #contact-info-mobile {
-    padding: 18% 5% 5%;
+        padding: 10% 4% 4%;
 }
 
 textarea {
@@ -1335,7 +1337,6 @@ textarea {
     }
     .navbar-header {
         float: none;
-       background: rgba(253,253,253, .85);
     }
     .navbar-toggle {
         display: block;
