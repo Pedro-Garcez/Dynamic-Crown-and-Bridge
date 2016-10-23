@@ -1141,9 +1141,7 @@ textarea {
         padding-left: 3%;
         padding-right: 3%
     }
-    .jumbotron p {
-        display: none;
-    }
+    
     p {
         font-size: 4.4vw;
         line-height: 5vw;
@@ -1199,6 +1197,9 @@ textarea {
 }
 
 @media (max-width: 1440px) {
+    .jumbotron p {
+        display: none;
+    }
     .btn-default {
         font-size: 1.1em;
         padding: 2.5% 5%;
