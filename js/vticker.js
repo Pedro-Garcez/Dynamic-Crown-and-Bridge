@@ -1,7 +1,7 @@
 /*! vTicker 1.21 http://richhollis.github.com/vticker/ | http://richhollis.github.com/vticker/license/ | based on Jubgits vTicker http://www.jugbit.com/jquery-vticker-vertical-news-ticker/ */
 (function(d) {
     var g, c, f;
-    g = { speed: 700, pause: 8E3, showItems: 1, mousePause: !1, height: 0, animate: !0, margin: 0, padding: 0, startPaused: !1, autoAppend: !0 };
+    g = { speed: 700, pause: 5E3, showItems: 1, mousePause: !1, height: 0, animate: !0, margin: 0, padding: 0, startPaused: !1, autoAppend: !0 };
     c = {
         moveUp: function(a, b) {
             return c.showNextItem(a, b, "up") },
