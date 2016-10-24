@@ -22,7 +22,7 @@ $(document).ready(function() {
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
 
         afterLoad: function(anchorLink, index) {
-            
+
             $(this).find(".animation").removeClass('animated fadeOutLeft');
             $(this).find(".animation").css("display", "block");
             $(this).find(".animation").addClass('animated fadeInLeft');
@@ -37,9 +37,7 @@ $(document).ready(function() {
             if ($(window).width() < 992) {
                 if (nextIndex === 6 || nextIndex === 7) {
                     $('.fa-bars').css('color', "#1a81dd");
-                }
-
-                else {
+                } else {
                     $('.fa-bars').css('color', "#fdfdfd");
                 }
             }
@@ -96,10 +94,19 @@ $(document).ready(function() {
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
-    $(".toggle_p").hover(function() {
-        $(this).parent().find(".p-toggler").slideToggle(200);
-        console.log('works dog');
-    });
+    if ($(window).width() > 992) {
+        $(".toggle_p").hover(function() {
+            $(this).parent().find(".p-toggler").slideToggle(200);
+            console.log('works dog');
+        });
+
+
+    } else if ($(window).width() < 992) {
+        $(".toggle_p").click(function() {
+            $(this).parent().find(".p-toggler").slideToggle(200);
+            console.log('works dog');
+        });
+    }
     $('.fa-chevron-down').unbind();
 
 });
