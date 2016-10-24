@@ -40,8 +40,7 @@ $(".slides2").slick({
         responsive: [{
             breakpoint: 992,
             settings: {
-                arrows: false,
-                dots: false
+                arrows: false
 
             }
         }]
