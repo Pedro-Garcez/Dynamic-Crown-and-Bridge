@@ -18,6 +18,7 @@ $(document).ready(function() {
         slideSelector: '.fullpageslide',
         navigationTooltips: ['Welcome', 'Mission', 'At a Glance', 'Services', 'Gallery', 'Contact Us'],
         navigation: true,
+        touchSensitivity: 10,
         menu: '#mainMenu',
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
 
