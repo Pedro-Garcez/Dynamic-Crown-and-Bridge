@@ -80,8 +80,6 @@ li {
 
 /* MOBILE MENU */
 
-@media (max-width: 767px) {}
-
 .navbar-toggle .fa-bars:after {
     content: 'MENU';
     position: absolute;
@@ -615,8 +613,11 @@ p i.fa.fa-phone {
     font-weight: inherit;
 }
 
-.p-toggler {
+.col-md-4 .p-toggler {
     display: none;
+    position: absolute;
+    padding: 0 10px;
+    left: -4px;
 }
 
 .features-vcenter {
@@ -657,13 +658,6 @@ p i.fa.fa-phone {
     -o-background-size: cover;
     background-size: cover;
     z-index: -5;
-}
-
-#feature_line_1 .col-md-4 p,
-#feature_line_2 .col-md-4 p {
-    position: absolute;
-    padding: 0;
-    left: -4px;
 }
 
 #features-wrapper .col-md-4 {
@@ -955,7 +949,6 @@ textarea {
     padding: 0;
 }
 
-
 .contact-info-wrapper {
     border-radius: 50px;
     float: left;
@@ -975,8 +968,6 @@ textarea {
 .contact-icon-wrapper .fa {
     float: left;
 }
-
-
 
 .contact i {
     font-size: 1.7em;
@@ -1060,7 +1051,6 @@ textarea {
         padding: 15px 0 8px;
         margin-bottom: 0;
     }
-   
     .navbar .navbar-collapse {
         text-align: center;
     }
@@ -1110,10 +1100,68 @@ textarea {
 }
 
 @media (max-width: 767px) {
-    
-.contact-info-wrapper {
-    font-size: 1em!important;
-}
+    .hero-img-2 {
+        background: url(../img/dynamiccrownandbridge-hero-1-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .hero-img-3 {
+        background: url(../img/dynamiccrownandbridge-hero-3-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .services-bg {
+        background: url(../img/dynamiccrownandbridge-services-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .hero-img-1 {
+        background: url(../img/dynamiccrownandbridge-hero-2-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .features-bg-img {
+        background: url(../img/dynamiccrownandbridge-at-a-glance-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .mission-bg {
+        background: url(../img/dynamiccrownandbridge-mission-statement-mobile.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #feature-slider .slick-track {
+        height: 190px;
+    }
+    #features img {
+        margin: 5% auto;
+        width: 80px;
+    }
+    .hovicon {
+        width: 90px!important;
+        height: 90px!important;
+    }
+    .contact-info-wrapper {
+        font-size: 1em!important;
+    }
     .arrow {
         margin-left: -14px;
         width: 30px;
@@ -1177,6 +1225,12 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .col-md-4 .p-toggler {
+        padding: 0 50px;
+    }
+    #feature-slider .slick-track {
+        height: 230px;
+    }
     .navbar-toggle .fa-bars {
         font-size: 2em;
     }
@@ -1204,7 +1258,7 @@ textarea {
 
 @media (max-width: 1440px) {
     .contact i {
-    font-size: 1.3em;
+        font-size: 1.3em;
     }
     .jumbotron p {
         display: none;
@@ -1341,9 +1395,6 @@ textarea {
     }
     #fp-nav.right {
         right: 0px;
-    }
-    #features img {
-        margin: 5% auto;
     }
     .navbar-header {
         float: none;

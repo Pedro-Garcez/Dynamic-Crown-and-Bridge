@@ -95,19 +95,10 @@ $(document).ready(function() {
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
-    if ($(window).width() > 992) {
-        $(".toggle_p").hover(function() {
+    $(".toggle_p").hover(function() {
             $(this).parent().find(".p-toggler").slideToggle(200);
-            console.log('works dog');
         });
-
-
-    } else if ($(window).width() < 992) {
-        $(".toggle_p").click(function() {
-            $(this).parent().find(".p-toggler").slideToggle(200);
-            console.log('works dog');
-        });
-    }
+    
     $('.fa-chevron-down').unbind();
 
 });
