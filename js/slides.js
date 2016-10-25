@@ -65,7 +65,8 @@ $(".slides3").slick({
         responsive: [{
             breakpoint: 992,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                arrows: false
 
             }
         }]
