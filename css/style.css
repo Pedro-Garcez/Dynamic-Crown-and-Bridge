@@ -33,10 +33,11 @@
     padding: 10%;
      height: 100%;
     width: 100%;
-    z-index: 99999;
+    z-index: 8888;
     left: 0;
     background: #fff;
     display: none;
+    
 }
 
 .ls-overlay i {
@@ -387,20 +388,7 @@ p i.fa.fa-phone {
     padding: 0;
 }
 
-.scroll-to-discover {
-    position: absolute;
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-    transform: translate(-50%);
-    bottom: 50px;
-    left: 50%;
-    font-size: 1.4em;
-    margin-bottom: 0!important;
-    font-weight: 400!important;
-    color: #FDFDFD;
-}
+
 
 .scroll-hero {
     cursor: pointer;
@@ -1098,8 +1086,8 @@ textarea {
 .center-mobile {}
 
 @media (max-width: 360px) {
-     .slick-dots {
-            bottom: 1px;
+     #feature-slider .slick-dots {
+            bottom: 1px!important;
     }
     .slick-next {
         right: 15px;
@@ -1195,7 +1183,7 @@ textarea {
 }
 
 @media (max-width: 767px) {
-    .slick-dots {
+    #feature-slider .slick-dots {
             bottom: -40px;
     }
     .contact i {
