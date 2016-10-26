@@ -37,7 +37,6 @@
                 <ul id="mainMenu" class="nav navbar-nav center-me">
                     <a class="dynamic-brand-white" href="#Welcome"><img src="img/DynamicCrownandBridgewhite.svg"></a>
                     <a class="dynamic-brand-blue" href="#Welcome"><img src="img/DynamicCrownandBridgeLogo.svg"></a>
-
                     <li>
                         <p id="welcome_scroll" data-menuanchor="Welcome" class="active nav-link-colors link-white-underline white-link">WELCOME</p>
                         <!-- <span></span>-->
@@ -402,7 +401,7 @@
                         </div>
                         <div class="col-md-12">
                             <h3>Contact Form</h3>
-                            <form data-toggle="validator" action="form.php" method="POST" role="form">
+                            <form id="dynamic_form" data-toggle="validator" onsubmit="submitForm(); return false;" role="form">
                                 <div class="form-group">
                                     <input name="name" type="text" class="form-control" id="inputName" placeholder="Name" required />
                                     <div class="help-block with-errors"></div>
@@ -412,14 +411,14 @@
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <input name="phone" type="text" pattern="[0-9]{10}" class="form-control" id="phone" placeholder="Phone # (Optional)" data-error="Please enter a valid phone number or leave blank." />
+                                    <input name="phone" type="text" pattern="[0-9]{10}" class="form-control" id="inputPhone" placeholder="Phone # (Optional)" data-error="Please enter a valid phone number or leave blank." />
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="3" placeholder="Type your message here."></textarea>
+                                    <textarea id="inputMessage" name="message" class="form-control" rows="3" placeholder="Type your message here."></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button name="submit" type="submit" class="btn btn-default hvr-bounce-to-right">SUBMIT</button>
+                                    <input id="form_submit" value="SUBMIT" name="submit" type="submit" class="btn btn-default hvr-bounce-to-right"><span id="status"></span></input>
                                 </div>
                             </form>
                         </div>
@@ -529,12 +528,10 @@
                                 <a href="privacypolicy.html">Privacy Policy</a>
                                 <!--<span></span>-->
                             </li>
-                           
                             <li>
                                 <a href="#">Copyright Dynamic Crown and Bridge 2016 All Rights Reserved</a>
                                 <!--<span></span>-->
                             </li>
-                            
                             <li>
                                 <a href="http://facebook.com/garcezpedro">Web Development by Pedro Garcez</a>
                                 <!--<span></span>-->
@@ -545,7 +542,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
@@ -567,6 +563,35 @@
     <script type="text/javascript" src="js/validator.min.js"></script>
     <script type="text/javascript" src="js/vticker.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1p2rUgdB0Rhz_lMX4APqvN9_LfWvfvpc&callback=initMap">
+    </script>
+    <script>
+    function _(id) {
+        return document.getElementById(id);
+    }
+
+    function submitForm() {
+        _("form_submit").disabled = true;
+        _("status").innerHTML = 'please wait ...';
+        var formdata = new FormData();
+        formdata.append("inputName", _("inputName").value);
+        formdata.append("inputEmail", _("inputEmail").value);
+        formdata.append("inputPhone", _("inputPhone").value);
+        formdata.append("inputMessage", _("inputMessage").value);
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("POST", "example_parser.php");
+        ajax.onreadystatechange = function() {
+            if (ajax.readyState == 4 && ajax.status == 200) {
+                if (ajax.responseText == "success") {
+                    _("dynamic_form").innerHTML = '<p>Thanks ' + _("n").value + ', your message has been sent.</p>';
+                } else {
+                    _("status").innerHTML = ajax.responseText;
+                    _("form_submit").disabled = false;
+                }
+            }
+        }
+        ajax.send(formdata);
+    }
     </script>
     <script>
     $(function() {
