@@ -26,6 +26,52 @@
 }
 
 
+/* LANDSCAPE OVERLAY*/
+
+.ls-overlay{
+    position: absolute;
+    padding: 10%;
+     height: 100%;
+    width: 100%;
+    z-index: 99999;
+    left: 0;
+    background: #fff;
+    display: none;
+}
+
+.ls-overlay i {
+     animation: rotate 2s linear infinite;
+     color: rgba(26, 129, 221, 1);
+      
+
+
+}
+
+
+
+/* only when orientation is in portrait mode */
+@media all 
+and (orientation:landscape)
+and (min-device-width: 0px) 
+and (max-device-width: 767px){
+    .ls-overlay {
+         display: block;
+    }
+}
+
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  }
+}
+
 /* Elements */
 
 strong {
@@ -1052,6 +1098,9 @@ textarea {
 .center-mobile {}
 
 @media (max-width: 360px) {
+     .slick-dots {
+            bottom: 1px;
+    }
     .slick-next {
         right: 15px;
     }
@@ -1146,6 +1195,9 @@ textarea {
 }
 
 @media (max-width: 767px) {
+    .slick-dots {
+            bottom: -40px;
+    }
     .contact i {
         margin: 0 10px 0px;
     }
@@ -1393,7 +1445,7 @@ textarea {
         font-size: 1em;
     }
     .jumbotron h1 {
-        font-size: 5.6em;
+        font-size: 5.4em;
         margin-bottom: 55px;
     }
     #example li {

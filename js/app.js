@@ -106,13 +106,7 @@
         $(this).parent().find(".p-toggler").slideToggle(200);
     });
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.innerWidth > window.innerHeight) === true) {
-        $.fn.fullpage.setAutoScrolling(false);
-        console.log("false");
-    }
 
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (window.innerWidth > window.innerHeight) === false) {
-        $.fn.fullpage.setAutoScrolling(true);
-        console.log("true");
 
-    }
+
+    
