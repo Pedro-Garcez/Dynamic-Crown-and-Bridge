@@ -1,14 +1,12 @@
 <?php
-if( isset($_POST['inputName']) && isset($_POST['inputEmail']) && isset($_POST['inputMessage']) && isset($_POST['inputPhone']) ){
-	$inputName = $_POST['inputName']; // HINT: use preg_replace() to filter the data
-	$inputEmail = $_POST['inputEmail'];
-	$inputPhone = $_POST['inputPhone'];
-
-	$inputMessage = nl2br($_POST['inputMessage']);
+if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
+	$n = $_POST['n']; // HINT: use preg_replace() to filter the data
+	$e = $_POST['e'];
+	$m = nl2br($_POST['m']);
 	$to = "dynamiccrownandbridge@gmail.com";	
-	$from = $inputEmail;
+	$from = $e;
 	$subject = 'Contact Form Message';
-	$message = '<b>Name:</b> '.$inputName.' <br><b>Email:</b> '.$inputEmail.' <br><b>Phone:</b> '.$inputPhone.' <p>'.$inputMessage.'</p>';
+	$message = '<b>Name:</b> '.$n.' <br><b>Email:</b> '.$e.' <p>'.$m.'</p>';
 	$headers = "From: $from\n";
 	$headers .= "MIME-Version: 1.0\n";
 	$headers .= "Content-type: text/html; charset=iso-8859-1\n";

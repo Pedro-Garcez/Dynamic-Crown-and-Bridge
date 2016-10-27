@@ -1021,8 +1021,7 @@ textarea {
     transition: all 0.5s ease;
 }
 
-.contact a:hover,
-#footer a:hover {
+.contact a:hover {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
@@ -1073,12 +1072,10 @@ textarea {
     margin-bottom: 0;
     list-style: none;
     font-weight: 300;
+        padding: 0 10px;
 }
 
-#footer li:last-child,
-#footer ul {
-    margin-bottom: 0px;
-}
+
 
 
 /*Media Query*/
