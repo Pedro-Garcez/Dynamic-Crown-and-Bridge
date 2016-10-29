@@ -25,7 +25,7 @@ $(".slides").slick({
 $(".slides2").slick({
         useTransform: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 6000,
         arrows: true,
         fade: false,
         slidesToShow: 1,
