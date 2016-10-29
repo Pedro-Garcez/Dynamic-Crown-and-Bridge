@@ -579,7 +579,6 @@ p i.fa.fa-phone {
     z-index: 10;
     height: 50px;
     width: 50px;
-    
 }
 
 .slick-prev {
@@ -1078,9 +1077,10 @@ textarea {
 .center-mobile {}
 
 @media (max-width: 360px) {
+   
     #feature-slider .slick-dots {
-    bottom: -40px!important;
-}
+        bottom: -40px!important;
+    }
     .slick-prev:before,
     .slick-next:before {
         font-size: 8vw;
@@ -1182,8 +1182,11 @@ textarea {
 }
 
 @media (max-width: 767px) {
+     .col-md-4 .p-toggler {
+        padding: 0 30px;
+    }
     #feature-slider .slick-dots {
-            bottom: -20px;
+        bottom: -20px;
     }
     .contact i {
         margin: 0 10px 0px;
@@ -1374,7 +1377,7 @@ textarea {
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1025px) {
-   #features-wrapper p {
+    #features-wrapper p {
         font-size: 1.1em!important;
         line-height: 1.1em!important;
     }
