@@ -24,14 +24,14 @@ $(".slides").slick({
 
 $(".slides2").slick({
         useTransform: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         arrows: true,
         fade: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+        pauseOnHover: true,
+        pauseOnFocus: true,
         dots: true,
         draggable: true,
         vertical: false,

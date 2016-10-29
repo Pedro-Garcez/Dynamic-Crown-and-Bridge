@@ -110,3 +110,6 @@
 
 
     
+ $(".btn, .accordion li.open .link").click(function() {
+        $(this).blur();
+    });
