@@ -31,7 +31,7 @@ $(".slides2").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: true,
-        pauseOnFocus: true,
+        pauseOnFocus: false,
         dots: true,
         draggable: true,
         vertical: false,

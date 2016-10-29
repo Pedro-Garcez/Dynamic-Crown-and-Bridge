@@ -577,11 +577,16 @@ p i.fa.fa-phone {
 .slick-next {
     right: 55px;
     z-index: 10;
+    height: 50px;
+    width: 50px;
+    
 }
 
 .slick-prev {
     left: 55px;
     z-index: 10;
+    height: 50px;
+    width: 50px;
 }
 
 .slick-list {
