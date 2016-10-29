@@ -1089,10 +1089,10 @@ textarea {
         bottom: 1px!important;
     }
     .slick-next {
-        right: 20px;
+        right: 10px;
     }
     .slick-prev {
-        left: 20px;
+        left: 10px;
     }
     #example li {
         font-size: 1.25em!important;
