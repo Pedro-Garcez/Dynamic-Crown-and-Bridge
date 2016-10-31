@@ -423,13 +423,13 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade 40s infinite;
-    -moz-animation: fade 40s infinite;
-    -o-animation: fade 40s infinite;
-    animation: fade 40s infinite;
-    -webkit-animation-delay: 7s;
+    -webkit-animation: fade 30s infinite;
+    -moz-animation: fade 30s infinite;
+    -o-animation: fade 30s infinite;
+    animation: fade 30s infinite;
+    -webkit-animation-delay: 4s;
     /* Chrome, Safari, Opera */
-    animation-delay: 7s;
+    animation-delay: 4s;
 }
 
 .hero-img-2 {
@@ -444,13 +444,13 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade2 40s infinite;
-    -moz-animation: fade2 40s infinite;
-    -o-animation: fade2 40s infinite;
-    animation: fade2 40s infinite;
-    -webkit-animation-delay: 7s;
+    -webkit-animation: fade2 30s infinite;
+    -moz-animation: fade2 30s infinite;
+    -o-animation: fade2 30s infinite;
+    animation: fade2 30s infinite;
+    -webkit-animation-delay: 4s;
     /* Chrome, Safari, Opera */
-    animation-delay: 7s;
+    animation-delay: 4s;
 }
 
 .hero-img-3 {
@@ -465,13 +465,13 @@ p i.fa.fa-phone {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-animation: fade3 40s infinite;
-    -moz-animation: fade3 40s infinite;
-    -o-animation: fade3 40s infinite;
-    animation: fade3 40s infinite;
-    -webkit-animation-delay: 7s;
+    -webkit-animation: fade3 30s infinite;
+    -moz-animation: fade3 30s infinite;
+    -o-animation: fade3 30s infinite;
+    animation: fade3 30s infinite;
+    -webkit-animation-delay: 4s;
     /* Chrome, Safari, Opera */
-    animation-delay: 7s;
+    animation-delay: 4s;
 }
 
 .vcenter {
