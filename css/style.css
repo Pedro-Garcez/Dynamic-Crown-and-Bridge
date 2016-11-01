@@ -946,8 +946,7 @@ p i.fa.fa-phone {
     display: block;
     text-decoration: none;
     color: #fdfdfd;
-    padding: 12px;
-    padding-left: 42px;
+    padding: 12px 12px 12px 42px;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
@@ -1077,7 +1076,6 @@ textarea {
 .center-mobile {}
 
 @media (max-width: 360px) {
-   
     #feature-slider .slick-dots {
         bottom: -40px!important;
     }
@@ -1182,7 +1180,7 @@ textarea {
 }
 
 @media (max-width: 767px) {
-     .col-md-4 .p-toggler {
+    .col-md-4 .p-toggler {
         padding: 0 30px;
     }
     #feature-slider .slick-dots {
@@ -1384,6 +1382,12 @@ textarea {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1440px) {
+    .accordion .link p {
+        padding: 10px 15px 10px 15px;
+    }
+    .submenu a {
+        padding: 10px 10px 10px 30px;
+    }
     #features-wrapper p {
         font-size: 1.25em;
         line-height: 1.25em;
