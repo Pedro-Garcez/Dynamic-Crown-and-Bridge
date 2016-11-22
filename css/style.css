@@ -1161,9 +1161,9 @@ textarea {
         transition: all 0.5s ease;
     }
     #mainMenu>li .active:before {
-        content: "\f1ce";
+        content: "\f10c";
         font-family: 'FontAwesome';
-        margin: 0 7.5px 0 0;
+        margin: 0 6px 0 0;
         
         
     }
@@ -1881,6 +1881,7 @@ textarea {
 .hovicon.effect-1.sub-b:hover {
     background-color: #FF580D;
     color: #41ab6b;
+    cursor: default;
 }
 
 .hovicon.effect-1.sub-b:hover i {
