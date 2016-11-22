@@ -1255,6 +1255,10 @@ textarea {
         width: 30px;
         height: 30px;
     }
+    #dark_section_arrow.arrow {
+        display: none;
+    }
+
     #footer li {
         font-size: .85em;
     }
@@ -1344,7 +1348,7 @@ textarea {
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
     .contact i {
         font-size: 1.3em;
     }
@@ -1380,7 +1384,7 @@ textarea {
     }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1440px) {
+@media screen and (min-width: 993px) and (max-width: 1600px) {
     .accordion .link p {
         padding: 10px 15px 10px 15px;
     }
