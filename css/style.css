@@ -25,6 +25,7 @@
     background: url(../images/loading.gif) center no-repeat #fff;
 }
 
+
 /* LANDSCAPE OVERLAY*/
 
 .ls-overlay {
@@ -1144,16 +1145,31 @@ textarea {
         border-bottom: none;
     }
     #mainMenu>li .active {
-        -webkit-animation-name: hvr-pulse;
+        /*-webkit-animation-name: hvr-pulse;
         animation-name: hvr-pulse;
         -webkit-animation-duration: 1.5s;
         animation-duration: 1.5s;
         -webkit-animation-timing-function: linear;
         animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;*/
         color: #FF580D!important;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
     }
+    #mainMenu>li .active:before {
+        content: "\f1ce";
+        font-family: 'FontAwesome';
+        margin: 0 7.5px 0 0;
+        
+        
+    }
+
+
+
     .link-dark-underline:after {
         content: '';
         position: absolute;
@@ -1258,7 +1274,6 @@ textarea {
     #dark_section_arrow.arrow {
         display: none;
     }
-
     #footer li {
         font-size: .85em;
     }
