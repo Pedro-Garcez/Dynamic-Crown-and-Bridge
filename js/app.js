@@ -1,7 +1,7 @@
     // Wait for window load
     $(window).load(function() {
         // Animate loader off screen
-        $(".se-pre-con").delay(500).fadeOut("slow");
+        $(".se-pre-con").fadeOut("slow");
     });
 
     $('.navbar-toggle').click(function() {
