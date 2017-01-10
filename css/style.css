@@ -1070,6 +1070,10 @@ textarea {
     padding: 0 10px;
 }
 
+#footer ul {
+    margin-bottom: 0;
+} 
+
 
 /*Media Query*/
 
