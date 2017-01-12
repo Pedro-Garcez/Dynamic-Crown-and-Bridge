@@ -1901,7 +1901,7 @@ textarea {
 .hovicon.effect-1.sub-b:hover {
     background-color: #FF580D;
     color: #41ab6b;
-    cursor: default;
+    cursor: pointer;
 }
 
 .hovicon.effect-1.sub-b:hover i {
