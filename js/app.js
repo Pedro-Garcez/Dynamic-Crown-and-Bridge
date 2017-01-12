@@ -102,7 +102,7 @@
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
-    $(".toggle_p").hover(function() {
+    $(".toggle_p").click(function() {
         $(this).parent().find(".p-toggler").slideToggle(200);
     });
 
