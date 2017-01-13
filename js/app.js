@@ -1,7 +1,10 @@
+    var toggled;
+
     // Wait for window load
     $(window).load(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");
+
     });
 
     $('.navbar-toggle').click(function() {
@@ -102,14 +105,16 @@
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
+
     $(".toggle_p").click(function() {
+        toggled = true;
         $(this).parent().find(".p-toggler").slideToggle(200);
     });
 
 
 
 
-    
- $(".btn, .accordion li.open .link").click(function() {
+
+    $(".btn, .accordion li.open .link").click(function() {
         $(this).blur();
     });

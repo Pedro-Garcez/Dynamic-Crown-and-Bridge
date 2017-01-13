@@ -296,27 +296,6 @@ li {
 
 /* HERO SECTION */
 
-#example {
-    width: 100%;
-    overflow: hidden;
-}
-
-#example ul {
-    list-style: none;
-    position: relative;
-    float: left;
-    display: block;
-    left: 50%;
-    width: 100%!important;
-}
-
-#example ul li {
-    position: relative;
-    display: block;
-    right: 50%;
-    width: 100%!important;
-}
-
 #hero-slide-container {}
 
 p i.fa.fa-phone {
@@ -336,11 +315,13 @@ p i.fa.fa-phone {
     transition: all 0.25s ease;
 }
 
-#example li {
+#example {
+   text-align: center;
+}
+
+#example h2 {
     font-family: 'Roboto';
     font-size: 3.5em;
-    margin-top: 0;
-    margin-bottom: 60px;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
     -webkit-animation-delay: 0.1s;
@@ -353,6 +334,33 @@ p i.fa.fa-phone {
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+    position: absolute;
+    opacity: 0;
+    overflow: visible;
+    -webkit-animation: rotateWord 12s linear infinite 0s;
+    -ms-animation: rotateWord 12s linear infinite 0s;
+    animation: rotateWord 12s linear infinite 0s;
+    margin: 0;
+    display: inline-block;
+    
+}
+
+#example h2:nth-child(2) {
+    -webkit-animation: rotateWord 12s linear infinite 3s;
+    -ms-animation: rotateWord 12s linear infinite 3s;
+    animation: rotateWord 12s linear infinite 3s;
+}
+
+#example h2:nth-child(3) {
+    -webkit-animation: rotateWord 12s linear infinite 6s;
+    -ms-animation: rotateWord 12s linear infinite 6s;
+    animation: rotateWord 12s linear infinite 6s;
+}
+
+#example h2:nth-child(4) {
+    -webkit-animation: rotateWord 12s linear infinite 9s;
+    -ms-animation: rotateWord 12s linear infinite 9s;
+    animation: rotateWord 12s linear infinite 9s;
 }
 
 .jumbotron h3 {
@@ -1072,7 +1080,7 @@ textarea {
 
 #footer ul {
     margin-bottom: 0;
-} 
+}
 
 
 /*Media Query*/
@@ -1168,12 +1176,7 @@ textarea {
         content: "\f10c";
         font-family: 'FontAwesome';
         margin: 0 6px 0 0;
-        
-        
     }
-
-
-
     .link-dark-underline:after {
         content: '';
         position: absolute;
@@ -1396,11 +1399,11 @@ textarea {
     }
     .dynamic-brand-white {
         width: 270px!important;
-            margin: 12px 25px 5px 0!important;
+        margin: 12px 25px 5px 0!important;
     }
     .dynamic-brand-blue {
         width: 270px!important;
-            margin: 12px 25px 5px 0!important;
+        margin: 12px 25px 5px 0!important;
     }
 }
 
@@ -1411,12 +1414,10 @@ textarea {
     }
     .dynamic-brand-white {
         display: none!important;
-       
     }
     .dynamic-brand-blue {
         display: none!important;
     }
-    
 }
 
 @media screen and (min-width: 993px) and (max-width: 1600px) {
@@ -1610,6 +1611,94 @@ textarea {
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        -ms-transform: translateY(-30px);
+    }
+    5% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+    17% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        -ms-transform: translateY(30px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    5% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    17% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes arrow {
