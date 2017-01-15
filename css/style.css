@@ -317,7 +317,7 @@ p i.fa.fa-phone {
 
 
 
-#example h2 {
+#rotating_text h2 {
     font-family: 'Roboto';
     font-size: 3.5em;
     letter-spacing: 3px;
@@ -344,19 +344,19 @@ p i.fa.fa-phone {
     
 }
 
-#example h2:nth-child(2) {
+#rotating_text h2:nth-child(2) {
     -webkit-animation: rotateWord 12s linear infinite 3s;
     -ms-animation: rotateWord 12s linear infinite 3s;
     animation: rotateWord 12s linear infinite 3s;
 }
 
-#example h2:nth-child(3) {
+#rotating_text h2:nth-child(3) {
     -webkit-animation: rotateWord 12s linear infinite 6s;
     -ms-animation: rotateWord 12s linear infinite 6s;
     animation: rotateWord 12s linear infinite 6s;
 }
 
-#example h2:nth-child(4) {
+#rotating_text h2:nth-child(4) {
     -webkit-animation: rotateWord 12s linear infinite 9s;
     -ms-animation: rotateWord 12s linear infinite 9s;
     animation: rotateWord 12s linear infinite 9s;
@@ -1105,7 +1105,7 @@ textarea {
     .slick-prev {
         left: 10px;
     }
-    #example li {
+    #rotating_text h2 {
         font-size: 1.25em!important;
     }
     .accordion .link p {
@@ -1299,7 +1299,7 @@ textarea {
         margin-bottom: 30px;
         padding: 0 3%;
     }
-    #example li {
+    #rotating_text h2 {
         font-size: 1.35em;
         margin-bottom: 30px;
         padding-left: .5%;
@@ -1358,7 +1358,7 @@ textarea {
         margin-bottom: 55px;
         padding: 0 10%;
     }
-    #example li {
+    #rotating_text h2 {
         font-size: 2em;
         margin-bottom: 40px;
     }
@@ -1493,7 +1493,7 @@ textarea {
         font-size: 5.4em;
         margin-bottom: 55px;
     }
-    #example li {
+    #rotating_text h2 {
         font-size: 2.8em;
         margin-bottom: 50px;
     }
