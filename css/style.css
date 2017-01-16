@@ -321,7 +321,6 @@ p i.fa.fa-phone {
     font-family: 'Roboto';
     font-size: 3.5em;
     letter-spacing: 3px;
-    left: 50%;
     color: rgba(255, 255, 255, 1);
     -webkit-animation-delay: 0.1s;
     -moz-animation-delay: 0.1s;
@@ -340,7 +339,8 @@ p i.fa.fa-phone {
     -ms-animation: rotateWord 12s linear infinite 0s;
     animation: rotateWord 12s linear infinite 0s;
     margin: 0;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
     
 }
 
@@ -1620,19 +1620,19 @@ textarea {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translate(-50%, -30px);
+    -webkit-transform: translateY(-30px);
   }
   5% {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0px);
+    -webkit-transform: translateY(0px);
   }
   17% {
     opacity: 1;
-    -webkit-transform: translate(-50%, 0px);
+    -webkit-transform: translateY(0px);
   }
   20% {
     opacity: 0;
-    -webkit-transform: translate(-50%, 30px);
+    -webkit-transform: translateY(30px);
   }
   80% {
     opacity: 0;
@@ -1648,19 +1648,19 @@ textarea {
   }
   2% {
     opacity: 0;
-    -ms-transform: translate(-50%, -30px);
+    -ms-transform: translateY(-30px);
   }
   5% {
     opacity: 1;
-    -ms-transform: translate(-50%, 0px);
+    -ms-transform: translateY(0px);
   }
   17% {
     opacity: 1;
-    -ms-transform: translate(-50%, 0px);
+    -ms-transform: translateY(0px);
   }
   20% {
     opacity: 0;
-    -ms-transform: translate(-50%, 30px);
+    -ms-transform: translateY(30px);
   }
   80% {
     opacity: 0;
@@ -1678,19 +1678,19 @@ textarea {
   }
   2% {
     opacity: 0;
-    transform: translate(-50%, -30px);
+    transform: translateY(-30px);
   }
   5% {
     opacity: 1;
-    transform: translate(-50%, 0px);
+    transform: translateY(0px);
   }
   17% {
     opacity: 1;
-    transform: translate(-50%, 0px);
+    transform: translateY(0px);
   }
   20% {
     opacity: 0;
-    transform: translate(-50%, 30px);
+    transform: translateY(30px);
   }
   80% {
     opacity: 0;
