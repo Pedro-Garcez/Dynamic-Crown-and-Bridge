@@ -1,4 +1,4 @@
-    var toggled;
+    var pToggled;
 
     // Wait for window load
     $(window).load(function() {
@@ -107,9 +107,23 @@
     });
 
     $(".toggle_p").click(function() {
-        toggled = true;
-        $(this).parent().find(".p-toggler").slideToggle(200);
+        pToggled = true;
+        $(this).parent().find(".p-toggler").slideDown(200);
+
+
+        /*if (pToggled = true) {
+            $(".toggle_p").mouseout(function() {
+                $(this).parent().find(".p-toggler").slideToggle(200);
+                pToggled = false;
+            });
+        }*/
     });
+    if (pToggled = true) {
+        $(".toggle_p").mouseout(function() {
+            $(this).parent().find(".p-toggler").slideUp(200);
+            pToggled = false;
+        });
+    }
 
 
 
