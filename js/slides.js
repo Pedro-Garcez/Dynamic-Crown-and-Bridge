@@ -1,6 +1,9 @@
  if ($(window).width() < 992) {
+     $('.slides2').on('beforeChange', function() {
+         $(this).find(".p-toggler").slideUp(100);
+     });
      $('.slides2').on('afterChange', function() {
-         console.log(pToggled);
+         $(this).find(".p-toggler").slideDown(100);
      });
  }
 
