@@ -491,6 +491,16 @@ p i.fa.fa-phone {
     transform: translateY(-50%);
 }
 
+#hero .vcenter {
+    position: relative;
+    top: calc(44.5%);
+    -webkit-transform: translateY(-44.5%);
+    -ms-transform: translateY(-44.5%);
+    transform: translateY(-44.5%);
+}
+
+
+
 .arrows {
     width: 70px;
     height: 80px;
