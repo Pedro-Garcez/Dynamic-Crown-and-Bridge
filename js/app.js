@@ -31,6 +31,7 @@
         touchSensitivity: 10,
         menu: '#mainMenu',
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
+        scrollingSpeed: 700,
 
         afterLoad: function(anchorLink, index) {
 
@@ -110,7 +111,7 @@
 
     $(".toggle_p").click(function() {
         pToggled = true;
-        $(this).parent().find(".p-toggler").slideDown(200);
+        $(this).parent().find(".p-toggler").fadeIn(300);
 
 
         /*if (pToggled = true) {
@@ -122,7 +123,7 @@
     });
     if (pToggled = true) {
         $(".toggle_p").mouseout(function() {
-            $(this).parent().find(".p-toggler").slideUp(200);
+            $(this).parent().find(".p-toggler").fadeOut(300);
             pToggled = false;
         });
     }
