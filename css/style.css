@@ -1035,6 +1035,11 @@ textarea {
     transition: all 0.5s ease;
 }
 
+#footer li a:hover {
+    text-shadow: 0 0 5px #fff;
+}
+
+
 .contact a:hover {
     text-decoration: none;
     margin-left: 10px;
