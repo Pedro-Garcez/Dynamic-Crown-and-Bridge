@@ -322,16 +322,10 @@ p i.fa.fa-phone {
     font-size: 3.5em;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 1);
-    -webkit-animation-delay: 0.1s;
-    -moz-animation-delay: 0.1s;
-    -o-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+    
     text-shadow: /*0 -1.25px 0 rgba(255,255,255,.5),*/
     0 1px 0 rgba(35, 35, 35, 1);
     font-weight: 400;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
     position: absolute;
     opacity: 0;
     overflow: visible;
@@ -1028,22 +1022,20 @@ textarea {
     font-size: 1.4em;
 }
 
-.contact a,
+
 #footer li a {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #footer li a:hover {
-    text-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px #fff; 
 }
 
 
 .contact a:hover {
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
+    text-decoration: underline;
 }
 
 #contact .col-md-7 {
