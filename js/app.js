@@ -1,5 +1,8 @@
-    var pToggled;
+    
 
+
+
+// Loader
     // Wait for window load
     $(window).load(function() {
         // Animate loader off screen
@@ -8,6 +11,10 @@
         pToggled = false;
 
     });
+
+
+
+//Mobile menu
 
     $('.navbar-toggle').click(function() {
         $('#overlay-dark-mobile').toggleClass('overlay-dark-mobile-active');
@@ -18,6 +25,8 @@
         $('.navbar-toggle:visible').click();
     });
 
+
+//Fullpage.js init and settings.
 
     $('#fullpagejs').fullpage({
 
@@ -82,6 +91,9 @@
 
 
     });
+
+//Fullpage.js scrolling
+
     $('#welcome_scroll').click(function() {
         $.fn.fullpage.moveTo(1);
     });
@@ -108,6 +120,10 @@
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
     });
+
+//At a glance icons
+
+var pToggled;
 
     $(".toggle_p").click(function() {
         pToggled = true;
