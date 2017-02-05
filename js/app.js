@@ -1,8 +1,4 @@
-    
-
-
-
-// Loader
+    // Loader
     // Wait for window load
     $(window).load(function() {
         // Animate loader off screen
@@ -14,7 +10,7 @@
 
 
 
-//Mobile menu
+    //Mobile menu
 
     $('.navbar-toggle').click(function() {
         $('#overlay-dark-mobile').toggleClass('overlay-dark-mobile-active');
@@ -26,7 +22,7 @@
     });
 
 
-//Fullpage.js init and settings.
+    //Fullpage.js init and settings.
 
     $('#fullpagejs').fullpage({
 
@@ -92,7 +88,7 @@
 
     });
 
-//Fullpage.js scrolling
+    //Fullpage.js scrolling
 
     $('#welcome_scroll').click(function() {
         $.fn.fullpage.moveTo(1);
@@ -121,31 +117,36 @@
         $('.accordion .link').unbind('mouseout');
     });
 
-//At a glance icons
-
-var pToggled;
-
-    $(".toggle_p").click(function() {
-        pToggled = true;
-        $(this).parent().find(".p-toggler").fadeIn(300);
+    //At a glance icons
 
 
-        /*if (pToggled = true) {
+    if ($(window).width() > 992) {
+        var pToggled;
+
+        $(".toggle_p").click(function() {
+            pToggled = true;
+            $(this).parent().find(".p-toggler").fadeIn(300);
+
+
+            /*if (pToggled = true) {
+                $(".toggle_p").mouseout(function() {
+                    $(this).parent().find(".p-toggler").slideToggle(200);
+                    pToggled = false;
+                });
+            }*/
+        });
+        if (pToggled = true) {
             $(".toggle_p").mouseout(function() {
-                $(this).parent().find(".p-toggler").slideToggle(200);
+                $(this).parent().find(".p-toggler").fadeOut(300);
                 pToggled = false;
             });
-        }*/
-    });
-    if (pToggled = true) {
-        $(".toggle_p").mouseout(function() {
-            $(this).parent().find(".p-toggler").fadeOut(300);
-            pToggled = false;
-        });
+        }
     }
 
 
 
+
+    //Removes :active from the accordion link
 
 
     $(".btn, .accordion li.open .link").click(function() {
