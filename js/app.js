@@ -119,7 +119,7 @@
 
     //At a glance icons
 
-
+            
     if ($(window).width() > 992) {
         var pToggled;
 
