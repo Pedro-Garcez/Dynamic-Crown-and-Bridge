@@ -145,20 +145,12 @@ li {
 
 /* MOBILE MENU */
 
-.navbar-toggle .fa-bars:after {
-    content: 'MENU';
-    position: absolute;
-    right: 35px;
-    font-family: 'Roboto';
-    font-weight: 300;
-}
-
 .navbar-toggle {
     margin-right: 30px;
 }
 
 .navbar-toggle .fa-bars {
-    font-size: 1.4em;
+    font-size: 1.7em;
     color: #fdfdfd;
 }
 
