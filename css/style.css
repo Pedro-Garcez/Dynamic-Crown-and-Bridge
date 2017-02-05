@@ -1985,15 +1985,21 @@ textarea {
     opacity: 0;
 }
 
-.hovicon.effect-1.sub-b:hover {
-    background-color: #FF580D;
-    color: #41ab6b;
-    cursor: pointer;
+
+
+.hovicon-hovered {
+    background-color: #FF580D!important;
+    color: #41ab6b!important;
+    cursor: pointer!important;
 }
 
-.hovicon.effect-1.sub-b:hover i {
-    color: #41ab6b;
+.hovicon-hovered-2 {
+    -webkit-transform: scale(1.2)!important;
+    -moz-transform: scale(1.2)!important;
+    -ms-transform: scale(1.2)!important;
+    transform: scale(1.2)!important;
 }
+
 
 .hovicon.effect-1.sub-b:after {
     -webkit-transform: scale(1.2);
@@ -2002,10 +2008,18 @@ textarea {
     transform: scale(1.2);
 }
 
+
+
+@media (min-width: 993px) {
+    .hovicon.effect-1.sub-b:hover i {
+    color: #41ab6b;
+}
+
 .hovicon.effect-1.sub-b:hover:after {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+}
 }
