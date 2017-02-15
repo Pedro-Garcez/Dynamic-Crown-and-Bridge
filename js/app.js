@@ -28,7 +28,7 @@
 
         loopBottom: true,
         fitToSection: true,
-        verticalCentered: true,
+        verticalCentered: false,
         normalScrollElements: '#gmap_canvas_2, #gmap_canvas',
         slideSelector: '.fullpageslide',
         navigationTooltips: ['Welcome', 'Mission', 'At a Glance', 'Services', 'Gallery', 'Contact Us'],

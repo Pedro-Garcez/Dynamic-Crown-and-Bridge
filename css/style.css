@@ -473,11 +473,11 @@ p i.fa.fa-phone {
 }
 
 #hero .vcenter {
-    position: relative;
-    top: calc(44.5%);
-    -webkit-transform: translateY(-44.5%);
-    -ms-transform: translateY(-44.5%);
-    transform: translateY(-44.5%);
+    top: calc(45%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
 }
 
 .arrows {
@@ -992,6 +992,7 @@ p i.fa.fa-phone {
 
 
 /* Contact Section */
+
 
 #contact-info-mobile {
     padding: 10% 4% 4%;
