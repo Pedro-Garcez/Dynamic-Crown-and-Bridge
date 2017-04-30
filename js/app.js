@@ -27,7 +27,7 @@
     $('#fullpagejs').fullpage({
 
         loopBottom: true,
-        fitToSection: true,
+        fitToSection: false,
         verticalCentered: false,
         normalScrollElements: '#gmap_canvas_2, #gmap_canvas',
         slideSelector: '.fullpageslide',
@@ -36,7 +36,7 @@
         touchSensitivity: 10,
         menu: '#mainMenu',
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
-        scrollingSpeed: 650,
+        scrollingSpeed: 450,
 
         afterLoad: function(anchorLink, index) {
 
