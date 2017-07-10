@@ -36,7 +36,7 @@
         touchSensitivity: 10,
         menu: '#mainMenu',
         anchors: ['Welcome', 'Mission', 'At a Glance', 'Services Section', 'Gallery', 'Contact Us'],
-        scrollingSpeed: 450,
+        scrollingSpeed: 525,
 
         afterLoad: function(anchorLink, index) {
 
