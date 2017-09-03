@@ -1,7 +1,6 @@
 @import 'main.css';
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-
 /* LOADER */
 
 .no-js #loader {
@@ -691,7 +690,8 @@ p i.fa.fa-phone {
 }
 
 .col-md-4 .p-toggler {
-    display: none;
+    opacity: 0;
+    transition: all .3s ease-in;    
     position: absolute;
     padding: 0 10px;
     /* left: -4px; */

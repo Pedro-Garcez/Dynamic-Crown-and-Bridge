@@ -3,9 +3,6 @@
     $(window).load(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");
-
-        pToggled = false;
-
     });
 
 
@@ -24,7 +21,7 @@
 
     //Fullpage.js init and settings.
 
-    $('#fullpagejs').fullpage({
+    /*$('#fullpagejs').fullpage({
 
         loopBottom: true,
         fitToSection: false,
@@ -79,13 +76,7 @@
 
                 }
             }
-
-
-
-
         }
-
-
     });
 
     //Fullpage.js scrolling
@@ -111,7 +102,7 @@
     $('.scroll-hero, #learn-more').click(function() {
         $.fn.fullpage.moveSectionDown();
 
-    });
+    });*/
 
     $(".accordion .link").click(function() {
         $('.accordion .link').unbind('mouseout');
@@ -119,29 +110,15 @@
 
     //At a glance icons
 
-            
-    if ($(window).width() > 992) {
-        var pToggled;
-
-        $(".toggle_p").click(function() {
-            pToggled = true;
-            $(this).parent().find(".p-toggler").fadeIn(300);
-
-
-            /*if (pToggled = true) {
-                $(".toggle_p").mouseout(function() {
-                    $(this).parent().find(".p-toggler").slideToggle(200);
-                    pToggled = false;
-                });
-            }*/
-        });
-        if (pToggled = true) {
-            $(".toggle_p").mouseout(function() {
-                $(this).parent().find(".p-toggler").fadeOut(300);
-                pToggled = false;
-            });
-        }
-    }
+    $(".toggle_p").click(function() {
+        $(this).parent().find(".p-toggler").css("opacity", "100");
+    });
+        
+        
+    $(".toggle_p").mouseout(function() {
+        $(this).parent().find(".p-toggler").css("opacity", "0");
+        pToggled = false;
+    });
 
 
 
